@@ -1,0 +1,50 @@
+config:
+  backup: true
+  banner: true
+  cmpignore:
+  - '*~'
+  create: true
+  dotpath: dotfiles
+  ignoreempty: false
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+  showdiff: false
+  upignore:
+  - '*~'
+  workdir: ~/.config/dotdrop
+actions:
+  create-dircolors: actions/create-dircolors.sh > {0}
+dotfiles:
+  d_sh:
+    dst: ~/.sh
+    src: sh
+    cmpignore:
+    - 'dir_colors'
+    upignore:
+    - 'dir_colors'
+    actions:
+      - create-dircolors "~/.sh/dir_colors"
+  d_zsh:
+    cmpignore:
+    - '*/.zcompdump'
+    - '*/histfile'
+    dst: ~/.zsh
+    src: zsh
+    upignore:
+    - '*/.zcompdump'
+    - '*/histfile'
+  f_shrc:
+    dst: ~/.shrc
+    src: shrc
+  f_zshenv:
+    dst: ~/.zshenv
+    src: zshenv
+profiles:
+  marvin:
+    dotfiles:
+    - f_zshenv
+    - d_zsh
+    - f_shrc
+    - d_sh

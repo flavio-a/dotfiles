@@ -1,0 +1,14 @@
+# Color aliases
+if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+    alias ls='ls --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# Custom aliases
+alias ll="ls -la"
+alias cd..="cd .."
+alias monta-common="sshfs ssh2.uz.sns.it:common/ ~/sshfsMountPoint"
+alias smonta-sshfs="fusermount --unmount ~/sshfsMountPoint/"
+alias poll-here="while(true) do touch cusu.tmp; rm cusu.tmp; echo polled; sleep 100; done"

@@ -1,0 +1,5 @@
+# Remove background colors from folders in ls
+source "$HOME/.sh/dir_colors"
+
+# Aliases
+source "$HOME/.sh/aliases"

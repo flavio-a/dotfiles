@@ -1,0 +1,2 @@
+# Setting $ZDOTDIR to move other configs in a subdir
+ZDOTDIR="$HOME/.zsh"
