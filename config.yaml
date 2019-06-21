@@ -21,20 +21,22 @@ dotfiles:
     dst: ~/.sh
     src: sh
     cmpignore:
-    - 'dir_colors'
+    - dir_colors
     upignore:
-    - 'dir_colors'
+    - dir_colors
     actions:
-      - create-dircolors "~/.sh/dir_colors"
+    - create-dircolors "~/.sh/dir_colors"
   d_zsh:
     cmpignore:
     - '*/.zcompdump'
     - '*/histfile'
+    - '*/zsh_plugins.sh'
     dst: ~/.zsh
     src: zsh
     upignore:
     - '*/.zcompdump'
     - '*/histfile'
+    - '*/zsh_plugins.sh'
   f_shrc:
     dst: ~/.shrc
     src: shrc

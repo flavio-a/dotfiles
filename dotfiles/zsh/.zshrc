@@ -29,14 +29,24 @@ zstyle ':completion:*' use-compctl false
 zstyle ':completion:*' verbose true
 
 # History
-setopt sharehistory
-HISTFILE=$ZDOTDIR/histfile
+#setopt inc_append_history
+#setopt share_history
+setopt hist_ignore_dups
+HISTFILE="$ZDOTDIR/histfile"
 HISTSIZE=1000
 SAVEHIST=1000
 
-# Removing beeps
-unsetopt beep nomatch
+# Changing prompt
+export PROMPT='%F{green}%n@%m%f> '
+export RPROMPT="%F{blue}%~%f"
 
-# autoload -Uz compinit
-# compinit
+# Generic options
+unsetopt beep nomatch
+setopt auto_cd
 bindkey -e
+
+# Load plugins
+source "$ZDOTDIR/plugins.zsh"
+
+autoload -Uz compinit
+compinit
