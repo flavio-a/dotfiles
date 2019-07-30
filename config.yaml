@@ -43,6 +43,12 @@ dotfiles:
   f_zshenv:
     dst: ~/.zshenv
     src: zshenv
+  f_ssh_config:
+    src: ssh/config
+    dst: ~/.ssh/config
+  f_init.el:
+    src: emacs.d/init.el
+    dst: ~/.emacs.d/init.el
 profiles:
   marvin:
     dotfiles:
@@ -50,3 +56,5 @@ profiles:
     - d_zsh
     - f_shrc
     - d_sh
+    - f_ssh_config
+    - f_init.el
