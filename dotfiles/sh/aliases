@@ -14,7 +14,21 @@ alias mkdir="mkdir -p"
 alias l="ls"
 alias ll="ls -la"
 alias cd..="cd .."
+
+{%@@ if profile == "marvin" @@%}
+
+{#@@- marvin only aliases @@#}
 alias monta-common="sshfs ssh2.uz.sns.it:common/ ~/sshfsMountPoint"
 alias smonta-sshfs="fusermount --unmount ~/sshfsMountPoint/"
 alias poll-here="while true; do touch cusu.tmp; rm cusu.tmp; echo polled; sleep 100; done"
 
+{%@@ elif profile == "uz" @@%}
+
+{#@@- uz only aliases @@#}
+alias lol='/local/games/LoL/LoL.sh'
+alias cusumano="echo l\'altra mano"
+alias Telegram="telegram-new"
+alias juggler3dfull="/usr/lib/xscreensaver/juggler3d"
+alias juggler3d="juggler3dfull -no-{clubs,torches,knives,rings,bballs} -pattern"
+
+{%@@ endif @@%}

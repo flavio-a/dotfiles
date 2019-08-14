@@ -54,3 +54,8 @@ profiles:
     - f_shrc
     - d_sh
     - f_init.el
+  uz:
+    dotfiles:
+    - f_shrc
+    - d_sh
+    - f_init.el

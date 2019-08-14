@@ -47,6 +47,9 @@ unsetopt beep nomatch
 setopt auto_cd
 bindkey -e
 
+# Add to fpath
+fpath=( ~/.zsh/completions "${fpath[@]}" )
+
 # Load plugins
 source "$ZDOTDIR/plugins.zsh"
 
