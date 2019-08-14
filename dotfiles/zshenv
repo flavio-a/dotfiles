@@ -1,2 +1,5 @@
 # Setting $ZDOTDIR to move other configs in a subdir
 ZDOTDIR="$HOME/.zsh"
+
+# Prevent compinit from global zshrc
+skip_global_compinit=1
