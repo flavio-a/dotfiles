@@ -29,14 +29,16 @@ zstyle ':completion:*' use-compctl false
 zstyle ':completion:*' verbose true
 
 # History
-#setopt inc_append_history
-#setopt share_history
+setopt share_history
 #setopt extended_history
 setopt hist_ignore_dups
 setopt hist_ignore_space
 HISTFILE="$ZDOTDIR/histfile"
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=100000
+SAVEHIST=100000
+
+# Automatically report time for long commands
+REPORTTIME=5
 
 # Changing prompt
 export PROMPT='%F{green}%n@%m%f> '

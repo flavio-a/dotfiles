@@ -1,2 +1,3 @@
 zsh-users/zsh-autosuggestions
 jeanpantoja/dotpyvenv
+laggardkernel/zsh-thefuck

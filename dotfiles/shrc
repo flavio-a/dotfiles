@@ -4,7 +4,7 @@ source "$HOME/.sh/dir_colors"
 {%@@ if profile == "uz" @@%}
 # Uz profile
 export DOTDROP_PROFILE="uz"
-{%@@ endif @@%}
+{%@@ endif -@@%}
 
 # Aliases
 source "$HOME/.sh/aliases"

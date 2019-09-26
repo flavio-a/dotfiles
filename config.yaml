@@ -25,12 +25,14 @@ profiles:
     - d_sh
     - f_init.el
     - f_ssh_config
+    - f_gitconfig
   uz:
     dotfiles:
     - f_shrc
     - d_sh
     - f_init.el
     - f_ssh_config
+    - f_gitconfig
 dotfiles:
   d_sh:
     src: sh
@@ -64,3 +66,6 @@ dotfiles:
   f_init.el:
     src: emacs.d/init.el
     dst: ~/.emacs.d/init.el
+  f_gitconfig:
+    src: gitconfig
+    dst: ~/.gitconfig
