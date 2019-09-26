@@ -1,0 +1,62 @@
+{%@@ if profile == "marvin" @@%}
+IdentityFile ~/.ssh/github-sshkey
+IdentityFile ~/.ssh/gitlab-sshkey
+
+Host uzSsh2 uzSsh cloud
+	User Flavio_a
+	HostName ssh2.uz.sns.it
+
+Host uzSsh1 coccoina
+	User Flavio_a
+	HostName ssh1.uz.sns.it
+
+Host kratos
+	User Flavio_a
+	HostName kratos.himalaya.sns.it
+{%@@ endif @@%}
+{%@@ if profile == "uz" @@%}
+Host kraft
+	Hostname kraft.area51.sns.it
+	User main
+	IdentityFile ~/.ssh/ssh_key_uz
+
+Host shuttle
+	Hostname shuttle.uz.sns.it
+	User root
+	Port 2222
+
+Host amaldi
+	Hostname amaldi.uz.sns.it
+	User root
+	Port 2222
+{%@@ endif @@%}
+
+Host k2
+	Hostname k2.uz.sns.it
+	User root
+	Port 2222
+
+Host soyuz soy
+	Hostname soyuz.uz.sns.it
+	User root
+	Port 2222
+
+Host apollo
+	Hostname apollo.uz.sns.it
+	User root
+	Port 2222
+
+Host ariane
+	Hostname ariane.uz.sns.it
+	User root
+	Port 2222
+
+Host saturn
+	Hostname saturn.uz.sns.it
+	User root
+	Port 2222
+
+Host cortana
+	Hostname cortana.uz.sns.it
+	User geoguessrbot
+	IdentityFile ~/.ssh/ssh_key_uz

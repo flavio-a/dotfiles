@@ -1,51 +1,21 @@
-config:
-  backup: true
-  banner: true
-  cmpignore:
-  - '*~'
-  create: true
-  dotpath: dotfiles
-  ignoreempty: false
-  keepdot: false
-  link_dotfile_default: nolink
-  link_on_import: nolink
-  longkey: false
-  showdiff: false
-  upignore:
-  - '*~'
-  workdir: ~/.config/dotdrop
 actions:
   create-dircolors: actions/create-dircolors.sh > {0}
-dotfiles:
-  d_sh:
-    dst: ~/.sh
-    src: sh
-    cmpignore:
-    - dir_colors
-    upignore:
-    - dir_colors
-    actions:
-    - create-dircolors "~/.sh/dir_colors"
-  d_zsh:
-    cmpignore:
-    - '*/.zcompdump'
-    - '*/histfile'
-    - '*/zsh_plugins.sh'
-    dst: ~/.zsh
-    src: zsh
-    upignore:
-    - '*/.zcompdump'
-    - '*/histfile'
-    - '*/zsh_plugins.sh'
-  f_shrc:
-    dst: ~/.shrc
-    src: shrc
-  f_zshenv:
-    dst: ~/.zshenv
-    src: zshenv
-  f_init.el:
-    src: emacs.d/init.el
-    dst: ~/.emacs.d/init.el
+config:
+  longkey: false
+  banner: true
+  keepdot: false
+  dotpath: dotfiles
+  showdiff: false
+  workdir: ~/.config/dotdrop
+  backup: true
+  cmpignore:
+  - '*~'
+  ignoreempty: false
+  create: true
+  link_on_import: nolink
+  link_dotfile_default: nolink
+  upignore:
+  - '*~'
 profiles:
   marvin:
     dotfiles:
@@ -54,8 +24,43 @@ profiles:
     - f_shrc
     - d_sh
     - f_init.el
+    - f_ssh_config
   uz:
     dotfiles:
     - f_shrc
     - d_sh
     - f_init.el
+    - f_ssh_config
+dotfiles:
+  d_sh:
+    src: sh
+    cmpignore:
+    - dir_colors
+    actions:
+    - create-dircolors "~/.sh/dir_colors"
+    dst: ~/.sh
+    upignore:
+    - dir_colors
+  f_zshenv:
+    src: zshenv
+    dst: ~/.zshenv
+  d_zsh:
+    src: zsh
+    cmpignore:
+    - '*/.zcompdump'
+    - '*/histfile'
+    - '*/zsh_plugins.sh'
+    dst: ~/.zsh
+    upignore:
+    - '*/.zcompdump'
+    - '*/histfile'
+    - '*/zsh_plugins.sh'
+  f_ssh_config:
+    src: ssh/config
+    dst: ~/.ssh/config
+  f_shrc:
+    src: shrc
+    dst: ~/.shrc
+  f_init.el:
+    src: emacs.d/init.el
+    dst: ~/.emacs.d/init.el

@@ -1,5 +1,10 @@
 # Remove background colors from folders in ls
 source "$HOME/.sh/dir_colors"
 
+{%@@ if profile == "uz" @@%}
+# Uz profile
+export DOTDROP_PROFILE="uz"
+{%@@ endif @@%}
+
 # Aliases
 source "$HOME/.sh/aliases"
