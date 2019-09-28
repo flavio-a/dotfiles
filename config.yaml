@@ -94,7 +94,7 @@ dotfiles:
     dst: ~/.gitconfig
   f_atom_packages.list:
     src: atom/packages.list
-    dst: /tmp/atom-packages.list
+    dst: ~/.atom/packages.list
     trans_write: atom-list-packages
     actions:
       - atom-install-packages '{{@@ _dotfile_abs_dst @@}}'

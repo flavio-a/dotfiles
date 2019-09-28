@@ -3,3 +3,5 @@
 	name = Flavio
 [core]
 	editor = emacs -nw
+[alias]
+	logadog = log --abbrev --graph --decorate --oneline --all
