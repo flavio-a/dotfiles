@@ -60,3 +60,7 @@ Host cortana
 	Hostname cortana.uz.sns.it
 	User geoguessrbot
 	IdentityFile ~/.ssh/ssh_key_uz
+
+Host *
+	ControlMaster auto
+	ControlPath {{@@ ssh_control_path @@}}/%r@%h:%p

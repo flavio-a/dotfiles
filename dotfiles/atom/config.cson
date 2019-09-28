@@ -1,0 +1,33 @@
+"*":
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "autocomplete-snippets"
+      "autoflow"
+      "background-tips"
+      "busy-signal"
+      "git-log"
+      "pretty-json"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    fontSize: 18
+    softWrap: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "fdd86f3e-38a3-4c44-a218-73ff4584d223"
+  linter:
+    lintOnChange: false
+  "linter-ui-default":
+    showPanel: true
+  "spell-check":
+    locales: [
+      "en-US"
+    ]
+  tabs:
+    addNewTabsAtEnd: true
+    displayMruTabList: false
+    enableMruTabSwitching: false
+    enableVcsColoring: true
+  welcome:
+    showOnStartup: false

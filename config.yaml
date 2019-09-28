@@ -1,5 +1,13 @@
 actions:
-  create-dircolors: actions/create-dircolors.sh > {0}
+  sh-create-dircolors: actions/create-dircolors.sh > {0}
+  ssh-create-control-dir: mkdir -p {{@@ ssh_control_path @@}}
+  atom-install-packages: >-
+    export PATH="$(which python2 | xargs dirname):$PATH";
+    apm install --packages-file {0}
+trans_write:
+  atom-list-packages: apm list --installed --bare > {1}
+variables:
+  ssh_control_path: '/tmp/ssh_control'
 config:
   longkey: false
   banner: true
@@ -26,6 +34,8 @@ profiles:
     - f_init.el
     - f_ssh_config
     - f_gitconfig
+    include:
+    - atom
   uz:
     dotfiles:
     - f_shrc
@@ -33,13 +43,20 @@ profiles:
     - f_init.el
     - f_ssh_config
     - f_gitconfig
+    include:
+    - atom
+  atom:
+    dotfiles:
+    - f_atom_packages.list
+    - f_atom_config.cson
+    - f_atom_keymap.cson
 dotfiles:
   d_sh:
     src: sh
     cmpignore:
     - dir_colors
     actions:
-    - create-dircolors "~/.sh/dir_colors"
+    - sh-create-dircolors "~/.sh/dir_colors"
     dst: ~/.sh
     upignore:
     - dir_colors
@@ -60,6 +77,8 @@ dotfiles:
   f_ssh_config:
     src: ssh/config
     dst: ~/.ssh/config
+    actions:
+    - ssh-create-control-dir
   f_shrc:
     src: shrc
     dst: ~/.shrc
@@ -69,3 +88,15 @@ dotfiles:
   f_gitconfig:
     src: gitconfig
     dst: ~/.gitconfig
+  f_atom_packages.list:
+    src: atom/packages.list
+    dst: /tmp/atom-packages.list
+    trans_write: atom-list-packages
+    actions:
+    - atom-install-packages "/tmp/atom-packages.list"
+  f_atom_config.cson:
+    src: atom/config.cson
+    dst: ~/.atom/config.cson
+  f_atom_keymap.cson:
+    src: atom/keymap.cson
+    dst: ~/.atom/keymap.cson
