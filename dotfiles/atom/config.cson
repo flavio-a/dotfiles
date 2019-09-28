@@ -15,7 +15,7 @@
     softWrap: true
     tabLength: 4
   "exception-reporting":
-    userId: "fdd86f3e-38a3-4c44-a218-73ff4584d223"
+    userId: "{{@@ atom_user_id @@}}"
   linter:
     lintOnChange: false
   "linter-ui-default":

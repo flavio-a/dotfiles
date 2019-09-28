@@ -7,7 +7,7 @@ actions:
 trans_write:
   atom-list-packages: apm list --installed --bare > {1}
 variables:
-  ssh_control_path: '/tmp/ssh_control'
+  ssh_control_path: '~/.ssh/control'
 config:
   longkey: false
   banner: true
@@ -17,68 +17,72 @@ config:
   workdir: ~/.config/dotdrop
   backup: true
   cmpignore:
-  - '*~'
+    - '*~'
   ignoreempty: false
   create: true
   link_on_import: nolink
   link_dotfile_default: nolink
   upignore:
-  - '*~'
+    - '*~'
 profiles:
   marvin:
     dotfiles:
-    - f_zshenv
-    - d_zsh
-    - f_shrc
-    - d_sh
-    - f_init.el
-    - f_ssh_config
-    - f_gitconfig
+      - f_zshenv
+      - d_zsh
+      - f_shrc
+      - d_sh
+      - f_init.el
+      - f_ssh_config
+      - f_gitconfig
     include:
-    - atom
+      - atom
+    variables:
+      atom_user_id: "fdd86f3e-38a3-4c44-a218-73ff4584d223"
   uz:
     dotfiles:
-    - f_shrc
-    - d_sh
-    - f_init.el
-    - f_ssh_config
-    - f_gitconfig
+      - f_shrc
+      - d_sh
+      - f_init.el
+      - f_ssh_config
+      - f_gitconfig
     include:
-    - atom
+      - atom
+    variables:
+      atom_user_id: "36ea07cf-bb1d-4689-9c15-e24f14a5b7d0"
   atom:
     dotfiles:
-    - f_atom_packages.list
-    - f_atom_config.cson
-    - f_atom_keymap.cson
+      - f_atom_packages.list
+      - f_atom_config.cson
+      - f_atom_keymap.cson
 dotfiles:
   d_sh:
     src: sh
     cmpignore:
-    - dir_colors
+      - dir_colors
     actions:
-    - sh-create-dircolors "~/.sh/dir_colors"
+      - sh-create-dircolors "~/.sh/dir_colors"
     dst: ~/.sh
     upignore:
-    - dir_colors
+      - dir_colors
   f_zshenv:
     src: zshenv
     dst: ~/.zshenv
   d_zsh:
     src: zsh
     cmpignore:
-    - '*/.zcompdump'
-    - '*/histfile'
-    - '*/zsh_plugins.sh'
+      - '*/.zcompdump'
+      - '*/histfile'
+      - '*/zsh_plugins.sh'
     dst: ~/.zsh
     upignore:
-    - '*/.zcompdump'
-    - '*/histfile'
-    - '*/zsh_plugins.sh'
+      - '*/.zcompdump'
+      - '*/histfile'
+      - '*/zsh_plugins.sh'
   f_ssh_config:
     src: ssh/config
     dst: ~/.ssh/config
     actions:
-    - ssh-create-control-dir
+      - ssh-create-control-dir
   f_shrc:
     src: shrc
     dst: ~/.shrc
@@ -93,7 +97,7 @@ dotfiles:
     dst: /tmp/atom-packages.list
     trans_write: atom-list-packages
     actions:
-    - atom-install-packages "/tmp/atom-packages.list"
+      - atom-install-packages '{{@@ _dotfile_abs_dst @@}}'
   f_atom_config.cson:
     src: atom/config.cson
     dst: ~/.atom/config.cson
