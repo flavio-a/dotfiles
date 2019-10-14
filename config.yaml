@@ -4,6 +4,8 @@ actions:
   atom-install-packages: >-
     export PATH="$(which python2 | xargs dirname):$PATH";
     apm install --packages-file {0}
+  post:
+    zsh-bundle-plugins: antibody bundle < {0}.txt > {0}.sh
 trans_write:
   atom-list-packages: apm list --installed --bare > {1}
 variables:
@@ -78,6 +80,8 @@ dotfiles:
       - '*/.zcompdump'
       - '*/histfile'
       - '*/zsh_plugins.sh'
+    actions:
+      - zsh-bundle-plugins "{{@@ _dotfile_abs_dst @@}}/zsh_plugins"
   f_ssh_config:
     src: ssh/config
     dst: ~/.ssh/config
