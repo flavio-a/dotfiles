@@ -13,6 +13,10 @@ Host uzSsh1 coccoina
 Host kratos
 	User Flavio_a
 	HostName kratos.himalaya.sns.it
+
+Host *
+	ControlMaster auto
+	ControlPath {{@@ ssh_control_path @@}}/%r@%h:%p
 {%@@ endif @@%}
 {%@@ if profile == "uz" @@%}
 Host kraft
@@ -60,7 +64,3 @@ Host cortana
 	Hostname cortana.uz.sns.it
 	User geoguessrbot
 	IdentityFile ~/.ssh/ssh_key_uz
-
-Host *
-	ControlMaster auto
-	ControlPath {{@@ ssh_control_path @@}}/%r@%h:%p
