@@ -14,6 +14,7 @@ alias mkdir="mkdir -p"
 alias l="ls"
 alias ll="ls -la"
 alias cd..="cd .."
+alias atom.="atom ."
 
 {%@@ if profile == "marvin" @@%}
 

@@ -41,7 +41,12 @@ SAVEHIST=100000
 REPORTTIME=5
 
 # Changing prompt
+{%@@ if profile == "marvin" @@%}
 export PROMPT='%F{green}%n@%m%f> '
+{%@@ endif @@%}
+{%@@ if profile == "uz" @@%}
+export PROMPT='%F{green}%n@%m%f$ '
+{%@@ endif @@%}
 export RPROMPT="%F{blue}%~%f"
 
 # Generic options
