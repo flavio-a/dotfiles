@@ -9,5 +9,7 @@ export DOTDROP_PROFILE="uz"
 # Aliases
 source "$HOME/.sh/aliases"
 
+{%@@ if profile == "marvin" @@%}
 # Add snap to path
 PATH=$PATH:/snap/bin
+{%@@ endif @@%}
