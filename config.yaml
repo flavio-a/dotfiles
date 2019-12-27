@@ -67,8 +67,8 @@ dotfiles:
     cmpignore:
       - dir_colors
     actions:
-      - sh-create-dircolors "~/.sh/dir_colors"
-    dst: ~/.sh
+      - sh-create-dircolors "{{@@ _dotfile_abs_dst @@}}/dir_colors"
+    dst: ~/.config/sh
     upignore:
       - dir_colors
   f_zshenv:
@@ -80,7 +80,7 @@ dotfiles:
       - '*/.zcompdump'
       - '*/histfile'
       - '*/zsh_plugins.sh'
-    dst: ~/.zsh
+    dst: ~/.config/zsh
     upignore:
       - '*/.zcompdump'
       - '*/histfile'

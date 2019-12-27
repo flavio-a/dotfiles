@@ -1,5 +1,8 @@
+# Define path for sh config file
+SHDOTDIR="$HOME/.config/sh"
+
 # Remove background colors from folders in ls
-source "$HOME/.sh/dir_colors"
+source "$SHDOTDIR/dir_colors"
 
 {%@@ if profile == "uz" @@%}
 # Uz profile
@@ -7,7 +10,7 @@ export DOTDROP_PROFILE="uz"
 {%@@ endif @@%}
 
 # Aliases
-source "$HOME/.sh/aliases"
+source "$SHDOTDIR/aliases"
 
 {%@@ if profile == "marvin" @@%}
 # Add snap to path

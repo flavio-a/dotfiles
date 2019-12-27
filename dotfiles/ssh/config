@@ -2,6 +2,10 @@
 IdentityFile ~/.ssh/github-sshkey
 IdentityFile ~/.ssh/gitlab-sshkey
 
+Host *
+	ControlMaster auto
+	ControlPath {{@@ ssh_control_path @@}}/%r@%h:%p
+
 Host uzSsh2 uzSsh cloud
 	User Flavio_a
 	HostName ssh2.uz.sns.it
@@ -14,9 +18,10 @@ Host kratos
 	User Flavio_a
 	HostName kratos.himalaya.sns.it
 
-Host *
-	ControlMaster auto
-	ControlPath {{@@ ssh_control_path @@}}/%r@%h:%p
+Host amaldi
+	Hostname amaldi.uz.sns.it
+	User root
+	Port 2222
 {%@@ endif @@%}
 {%@@ if profile == "uz" @@%}
 Host kraft
@@ -26,11 +31,6 @@ Host kraft
 
 Host shuttle
 	Hostname shuttle.uz.sns.it
-	User root
-	Port 2222
-
-Host amaldi
-	Hostname amaldi.uz.sns.it
 	User root
 	Port 2222
 {%@@ endif @@%}
