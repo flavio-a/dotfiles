@@ -55,7 +55,7 @@ setopt auto_cd
 bindkey -e
 
 # Add to fpath
-fpath=( ~/.zsh/completions "${fpath[@]}" )
+fpath=( "$ZDOTDIR/completions" "${fpath[@]}" )
 
 # Load plugins
 source "$ZDOTDIR/plugins.zsh"

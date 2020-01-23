@@ -13,6 +13,7 @@ alias mkdir="mkdir -p"
 # Custom aliases
 alias l="ls"
 alias ll="ls -la"
+alias cd.="cd ."
 alias cd..="cd .."
 alias atom.="atom ."
 alias venv-rebuild='rm -rf $(cat .pyvenvdir) && python3 -m venv $(cat .pyvenvdir) && cd . && pip --version'
