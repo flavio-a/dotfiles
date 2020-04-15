@@ -22,7 +22,8 @@ Host amaldi
 	Hostname amaldi.uz.sns.it
 	User root
 	Port 2222
-{%@@ endif @@%}
+{%@@ endif -@@%}
+
 {%@@ if profile == "uz" @@%}
 Host kraft
 	Hostname kraft.area51.sns.it
@@ -64,3 +65,8 @@ Host cortana
 	Hostname cortana.uz.sns.it
 	User geoguessrbot
 	IdentityFile ~/.ssh/ssh_key_uz
+
+Host phi19
+	Hostname c6320p-2.itc.unipi.it
+	User ascari-spm20
+#	User f.ascari

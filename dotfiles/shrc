@@ -12,7 +12,5 @@ export DOTDROP_PROFILE="uz"
 # Aliases
 source "$SHDOTDIR/aliases"
 
-{%@@ if profile == "marvin" @@%}
-# Add snap to path
-PATH=$PATH:/snap/bin
-{%@@ endif @@%}
+# Add things to path
+PATH="${HOME}/.local/bin":/snap/bin:$PATH

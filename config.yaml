@@ -60,7 +60,8 @@ profiles:
     - f_bashrc
   misc:
     dotfiles:
-    - f_init.el
+    - f_emacs_init.el
+    - d_emacs_elpa
     - f_ssh_config
     - f_gitconfig
   atom:
@@ -78,7 +79,7 @@ profiles:
     - f_xfce4-panel.xml
 dotfiles:
   d_sh:
-    src: sh
+    src: config/sh
     cmpignore:
     - dir_colors
     actions:
@@ -90,7 +91,7 @@ dotfiles:
     src: zshenv
     dst: ~/.zshenv
   d_zsh:
-    src: zsh
+    src: config/zsh
     cmpignore:
     - '*/.zcompdump'
     - '*/histfile'
@@ -110,9 +111,12 @@ dotfiles:
   f_shrc:
     src: shrc
     dst: ~/.shrc
-  f_init.el:
+  f_emacs_init.el:
     src: emacs.d/init.el
     dst: ~/.emacs.d/init.el
+  d_emacs_elpa:
+    src: emacs.d/elpa
+    dst: ~/.emacs.d/elpa
   f_gitconfig:
     src: gitconfig
     dst: ~/.gitconfig

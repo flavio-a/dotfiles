@@ -57,8 +57,8 @@ bindkey -e
 # Add to fpath
 fpath=( "$ZDOTDIR/completions" "${fpath[@]}" )
 
-# Load plugins
-source "$ZDOTDIR/plugins.zsh"
-
 autoload -Uz compinit
 compinit
+
+# Load plugins
+source "$ZDOTDIR/plugins.zsh"

@@ -8,6 +8,8 @@
       "busy-signal"
       "git-log"
       "pretty-json"
+      "open-on-github"
+      "github"
     ]
     telemetryConsent: "limited"
   editor:
