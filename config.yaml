@@ -34,9 +34,12 @@ profiles:
     - zsh
     - bash
     - misc
-    - xfce4
+#    - xfce4
+    - openbox
     variables:
       atom_user_id: fdd86f3e-38a3-4c44-a218-73ff4584d223
+    dotfiles:
+    - f_asoundrc
   uz:
     include:
     - atom
@@ -77,6 +80,10 @@ profiles:
     - f_xfce4-power-manager.xml
     - d_xfce4-panel
     - f_xfce4-panel.xml
+  openbox:
+    dotfiles:
+    - d_openbox
+    - d_tint2
 dotfiles:
   d_sh:
     src: config/sh
@@ -153,3 +160,16 @@ dotfiles:
   f_xfce4-panel.xml:
     src: config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
     dst: ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+  f_asoundrc:
+    src: asoundrc
+    dst: ~/.asoundrc
+  d_tint2:
+    src: config/tint2
+    dst: ~/.config/tint2
+  d_openbox:
+    src: config/openbox
+    dst: ~/.config/openbox
+    cmpignore:
+    - 'sfondi/*'
+    upignore:
+    - 'sfondi/*'
