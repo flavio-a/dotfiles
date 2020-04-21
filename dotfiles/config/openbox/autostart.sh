@@ -1,8 +1,16 @@
 #!/bin/sh
+{%@@ if profile == "marvin" -@@%}
+
 ${HOME}/.config/openbox/mylayout.sh
 sh ${HOME}/.config/Xenv/xinitrc
-tint2 &
-~/.config/openbox/carica_sfondo.sh &
-# x-terminal-emulator &
 uxterm -e "byobu; $SHELL" &
+
+{%@@ elif profile == "uz" -@@%}
+
+x-terminal-emulator &
+
+{%@@ endif -@@%}
+
+~/.config/openbox/carica_sfondo.sh &
+tint2 &
 telegram-desktop &

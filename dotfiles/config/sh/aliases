@@ -4,6 +4,7 @@ if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
+    alias diff='diff --color=auto'
 fi
 
 # Command options
@@ -29,9 +30,9 @@ alias locip="ip a | grep '192.168'"
 {%@@ elif profile == "uz" @@%}
 
 {#@@- uz only aliases @@#}
-alias lol='/local/games/LoL/LoL.sh'
+# alias lol='/local/games/LoL/LoL.sh'
 alias cusumano="echo l\'altra mano"
-alias Telegram="telegram-new"
+# alias Telegram="telegram-new"
 alias juggler3dfull="/usr/lib/xscreensaver/juggler3d"
 alias juggler3d="juggler3dfull -no-{clubs,torches,knives,rings,bballs} -pattern"
 
