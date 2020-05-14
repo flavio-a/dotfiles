@@ -12,5 +12,4 @@ linter-ui-default@1.8.0
 pretty-json@2.1.2
 script@3.18.1
 
-ghost-text@0.0.1
-
+GhostText/GhostText-for-Atom@0.0.1

@@ -67,6 +67,8 @@ profiles:
     - d_emacs_elpa
     - f_ssh_config
     - f_gitconfig
+    - d_byobu
+    - d_xenv
   atom:
     dotfiles:
     - f_atom_packages.list
@@ -170,6 +172,16 @@ dotfiles:
     src: config/openbox
     dst: ~/.config/openbox
     cmpignore:
-    - 'sfondi/*'
+    - sfondi/*
     upignore:
-    - 'sfondi/*'
+    - sfondi/*
+  d_byobu:
+    src: byobu
+    dst: ~/.byobu
+    cmpignore:
+    - '*/.ssh-agent'
+    upignore:
+    - '*/.ssh-agent'
+  d_xenv:
+    src: config/Xenv
+    dst: ~/.config/Xenv
