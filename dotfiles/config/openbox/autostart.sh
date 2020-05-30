@@ -1,4 +1,7 @@
 #!/bin/sh
+
+source "$HOME/.shrc"
+
 {%@@ if profile == "marvin" -@@%}
 
 ${HOME}/.config/openbox/mylayout.sh

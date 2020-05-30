@@ -1,6 +1,5 @@
 {%@@ if profile == "marvin" @@%}
 IdentityFile ~/.ssh/github-sshkey
-IdentityFile ~/.ssh/gitlab-sshkey
 
 Host *
 	ControlMaster auto

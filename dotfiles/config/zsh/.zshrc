@@ -40,6 +40,9 @@ SAVEHIST=100000
 # Automatically report time for long commands
 REPORTTIME=5
 
+# Making disown send continue to the disowned process
+setopt AUTO_CONTINUE
+
 # Changing prompt
 {%@@ if profile == "marvin" @@%}
 export PROMPT='%F{green}%n@%m%f> '

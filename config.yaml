@@ -176,8 +176,8 @@ dotfiles:
     upignore:
     - sfondi/*
   d_byobu:
-    src: byobu
-    dst: ~/.byobu
+    src: config/byobu
+    dst: ~/.config/byobu
     cmpignore:
     - '*/.ssh-agent'
     upignore:
