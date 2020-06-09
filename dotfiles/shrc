@@ -13,4 +13,4 @@ export DOTDROP_PROFILE="uz"
 source "$SHDOTDIR/aliases"
 
 # Add things to path
-PATH="${HOME}/.local/bin":/snap/bin:$PATH
+PATH="${HOME}/.local/bin:/snap/bin:$PATH"

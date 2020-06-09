@@ -34,7 +34,6 @@ profiles:
     - zsh
     - bash
     - misc
-#    - xfce4
     - openbox
     variables:
       atom_user_id: fdd86f3e-38a3-4c44-a218-73ff4584d223
@@ -86,6 +85,7 @@ profiles:
     dotfiles:
     - d_openbox
     - d_tint2
+    - f_xscreensaver
 dotfiles:
   d_sh:
     src: config/sh
@@ -185,3 +185,6 @@ dotfiles:
   d_xenv:
     src: config/Xenv
     dst: ~/.config/Xenv
+  f_xscreensaver:
+    src: xscreensaver
+    dst: ~/.xscreensaver

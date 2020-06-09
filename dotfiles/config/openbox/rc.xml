@@ -338,7 +338,7 @@
   </keybind>
   <keybind key="C-A-m">
     <action name="Execute">
-      <command>/snap/bin/telegram-desktop</command>
+      <command>~/.config/openbox/start-tg.sh</command>
     </action>
   </keybind>
   <keybind key="A-F3">

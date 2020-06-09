@@ -1,10 +1,9 @@
 #!/bin/sh
 
-source "$HOME/.shrc"
-
 {%@@ if profile == "marvin" -@@%}
 
-${HOME}/.config/openbox/mylayout.sh
+sh ${HOME}/.config/openbox/mylayout.sh
+xscreensaver &
 sh ${HOME}/.config/Xenv/xinitrc
 uxterm -e "byobu; $SHELL" &
 
@@ -14,6 +13,6 @@ x-terminal-emulator &
 
 {%@@ endif -@@%}
 
-~/.config/openbox/carica_sfondo.sh &
+sh ~/.config/openbox/carica_sfondo.sh &
 tint2 &
-telegram-desktop &
+# sh ~/.config/openbox/start-tg.sh &
