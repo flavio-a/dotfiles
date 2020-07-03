@@ -173,8 +173,10 @@ dotfiles:
     dst: ~/.config/openbox
     cmpignore:
     - sfondi/*
+    - lxqt-rc.xml
     upignore:
     - sfondi/*
+    - lxqt-rc.xml
   d_byobu:
     src: config/byobu
     dst: ~/.config/byobu

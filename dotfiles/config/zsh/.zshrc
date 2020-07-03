@@ -4,6 +4,9 @@ select-word-style bash
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
 
+# Bind delete key to actually delete characters
+bindkey "^[[3~" delete-char
+
 # Disable adding completions, only shows
 setopt noautomenu nomenucomplete
 

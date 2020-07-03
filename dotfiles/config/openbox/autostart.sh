@@ -13,6 +13,6 @@ x-terminal-emulator &
 
 {%@@ endif -@@%}
 
-sh ~/.config/openbox/carica_sfondo.sh &
+sh ~/.config/openbox/carica_sfondo.sh
 tint2 &
-# sh ~/.config/openbox/start-tg.sh &
+sh ~/.config/openbox/start-tg.sh &
