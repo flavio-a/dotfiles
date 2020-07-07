@@ -26,6 +26,7 @@ alias monta-common="sshfs ssh2.uz.sns.it:common/ ~/sshfsMountPoint"
 alias smonta-sshfs="fusermount --unmount ~/sshfsMountPoint/"
 alias poll-here="while true; do touch cusu.tmp; rm cusu.tmp; echo polled; sleep 100; done"
 alias locip="ip a | grep '192.168'"
+alias temp="sensors | grep -A4 coretemp"
 
 {%@@ elif profile == "uz" @@%}
 
