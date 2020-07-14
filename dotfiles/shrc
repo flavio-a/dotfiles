@@ -1,16 +1,13 @@
 # Define path for sh config file
 SHDOTDIR="$HOME/.config/sh"
 
-# Remove background colors from folders in ls
+# Things to source:
+
+## Remove background colors from folders in ls
 source "$SHDOTDIR/dir_colors"
 
-{%@@ if profile == "uz" @@%}
-# Uz profile
-export DOTDROP_PROFILE="uz"
-{%@@ endif @@%}
+## Load env variables
+source "$SHDOTDIR/shenv"
 
-# Aliases
+## Aliases
 source "$SHDOTDIR/aliases"
-
-# Add things to path
-PATH="${HOME}/.local/bin:/snap/bin:$PATH"

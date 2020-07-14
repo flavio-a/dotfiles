@@ -16,3 +16,4 @@ x-terminal-emulator &
 sh ~/.config/openbox/carica_sfondo.sh
 tint2 &
 sh ~/.config/openbox/start-tg.sh &
+numlockx &

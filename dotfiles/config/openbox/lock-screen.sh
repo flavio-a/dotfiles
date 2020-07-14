@@ -5,4 +5,3 @@ if ! [ -x "$(command -v xscreensaver-command)" ]; then
 else
         xscreensaver-command -lock
 fi
-		

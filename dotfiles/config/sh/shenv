@@ -1,0 +1,10 @@
+{%@@ if profile == "uz" @@%}
+# Uz profile
+export DOTDROP_PROFILE="uz"
+{%@@ endif @@%}
+
+# Add things to path
+export PATH="${HOME}/.local/bin:/snap/bin:$PATH"
+
+# pipenv in project dir
+export PIPENV_VENV_IN_PROJECT="y"

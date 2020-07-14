@@ -237,11 +237,11 @@
   <keybind key="A-F4">
     <action name="Close"/>
   </keybind>
-  <keybind key="A-Escape">
-    <action name="Lower"/>
-    <action name="FocusToBottom"/>
-    <action name="Unfocus"/>
-  </keybind>
+  <!-- <keybind key="A-Escape"> -->
+  <!--   <action name="Lower"/> -->
+  <!--   <action name="FocusToBottom"/> -->
+  <!--   <action name="Unfocus"/> -->
+  <!-- </keybind> -->
   <keybind key="A-space">
     <action name="ShowMenu"><menu>client-menu</menu></action>
   </keybind>
@@ -320,12 +320,14 @@
   <!-- Custom shortcuts -->
   <keybind key="C-A-t">
     <action name="Execute">
-      <command>x-terminal-emulator</command>
+      <!-- <command>x-terminal-emulator</command> -->
+      <command>uxterm</command>
     </action>
   </keybind>
   <keybind key="C-A-l">
     <action name="Execute">
-      <command>~/.config/openbox/lock-screen.sh</command>
+      <!-- <command>~/.config/openbox/lock-screen.sh</command> -->
+      <command>xscreensaver-command -lock</command>
     </action>
   </keybind>
   <keybind key="C-A-o">
@@ -350,6 +352,9 @@
     <action name="Execute">
       <command>thunar</command>
     </action>
+  </keybind>
+  <keybind key="A-Escape">
+    <action name="Iconify"/>
   </keybind>
   <keybind key="XF86AudioRaiseVolume">
     <action name="Execute"> 
