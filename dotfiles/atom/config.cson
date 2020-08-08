@@ -22,14 +22,18 @@
     lintOnChange: false
   "linter-ui-default":
     showPanel: true
+  "one-dark-ui": {}
   "spell-check":
     locales: [
       "en-US"
+      "it-IT"
     ]
   tabs:
     addNewTabsAtEnd: true
     displayMruTabList: false
     enableMruTabSwitching: false
     enableVcsColoring: true
+  "tree-view":
+    hideVcsIgnoredFiles: false
   welcome:
     showOnStartup: false
