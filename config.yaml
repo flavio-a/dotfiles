@@ -104,14 +104,17 @@ dotfiles:
     cmpignore:
     - '*/.zcompdump'
     - '*/histfile'
-    - '*/zsh_plugins.sh'
+    - '*/zsh_plugins_pre.sh'
+    - '*/zsh_plugins_post.sh'
     dst: ~/.config/zsh
     upignore:
     - '*/.zcompdump'
     - '*/histfile'
-    - '*/zsh_plugins.sh'
+    - '*/zsh_plugins_pre.sh'
+    - '*/zsh_plugins_post.sh'
     actions:
-    - zsh-bundle-plugins "{{@@ _dotfile_abs_dst @@}}/zsh_plugins"
+    - zsh-bundle-plugins "{{@@ _dotfile_abs_dst @@}}/zsh_plugins_pre"
+    - zsh-bundle-plugins "{{@@ _dotfile_abs_dst @@}}/zsh_plugins_post"
   f_ssh_config:
     src: ssh/config
     dst: ~/.ssh/config

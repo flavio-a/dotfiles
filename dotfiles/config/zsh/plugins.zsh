@@ -1,4 +1,7 @@
-# Load and configure plugins
+# Load and configure plugins, setting up completion in the meantime
+
+# Add to fpath
+fpath=( "$ZDOTDIR/completions" "${fpath[@]}" )
 
 # zsh-autosuggestions
 
@@ -8,4 +11,9 @@ ZSH_AUTOSUGGEST_USE_ASYNC=true
 
 # Load
 
-source "$ZDOTDIR/zsh_plugins.sh"
+source "$ZDOTDIR/zsh_plugins_pre.sh"
+
+autoload -Uz compinit
+compinit
+
+source "$ZDOTDIR/zsh_plugins_post.sh"

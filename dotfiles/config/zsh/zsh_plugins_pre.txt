@@ -1,3 +1,3 @@
 zsh-users/zsh-autosuggestions
 flavio-a/dotpyvenv
-b4b4r07/enhancd
+ohmyzsh/ohmyzsh path:plugins/asdf

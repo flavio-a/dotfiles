@@ -57,14 +57,8 @@ export RPROMPT="%F{blue}%~%f"
 
 # Generic options
 unsetopt beep nomatch
-setopt auto_cd
+# setopt auto_cd
 bindkey -e
 
-# Add to fpath
-fpath=( "$ZDOTDIR/completions" "${fpath[@]}" )
-
-autoload -Uz compinit
-compinit
-
-# Load plugins
+# Load plugins and setup completion
 source "$ZDOTDIR/plugins.zsh"
