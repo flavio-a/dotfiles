@@ -46,7 +46,8 @@ profiles:
     - zsh
     - bash
     - misc
-    - xfce4
+    - openbox
+    # - xfce4
     variables:
       atom_user_id: 36ea07cf-bb1d-4689-9c15-e24f14a5b7d0
   sh:
@@ -175,10 +176,10 @@ dotfiles:
     src: config/openbox
     dst: ~/.config/openbox
     cmpignore:
-    - sfondi/*
+    - sfondi
     - lxqt-rc.xml
     upignore:
-    - sfondi/*
+    - sfondi
     - lxqt-rc.xml
   d_byobu:
     src: config/byobu

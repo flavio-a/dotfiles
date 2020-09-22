@@ -4,16 +4,17 @@
 
 sh ${HOME}/.config/openbox/mylayout.sh
 xscreensaver &
-sh ${HOME}/.config/Xenv/xinitrc
-uxterm -e "byobu; $SHELL" &
+numlockx &
 
 {%@@ elif profile == "uz" -@@%}
 
-x-terminal-emulator &
+xscreensaver -nosplash &
+# x-terminal-emulator &
 
 {%@@ endif -@@%}
 
+sh ${HOME}/.config/Xenv/xinitrc
+uxterm -e "byobu; $SHELL" &
 sh ~/.config/openbox/carica_sfondo.sh
 tint2 &
 sh ~/.config/openbox/start-tg.sh &
-numlockx &

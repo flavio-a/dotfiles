@@ -11,7 +11,7 @@ esac
 {%@@ if profile == "uz" @@%}
 # If available, runs zsh
 # see https://gist.github.com/n-st/74f5ce07391bf8e95f5d8a6b452f6da8
-if [ -z "${NOZSH}" ] && [ $TERM = "xterm" -o $TERM = "xterm-256color" -o $TERM = "screen" ] && type zsh &> /dev/null
+if [ -z "${NOZSH}" ] && [ $TERM = "xterm" -o $TERM = "xterm-256color" -o $TERM = "screen" -o $TERM = "screen-256color" ] && type zsh &> /dev/null
 then
     export SHELL=$(which zsh)
     if [[ -o login ]]
@@ -21,7 +21,7 @@ then
         exec zsh
     fi
 fi
-{%@@ endif -@@%}
+{%@@ endif @@%}
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
