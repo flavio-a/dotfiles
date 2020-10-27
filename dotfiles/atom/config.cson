@@ -5,11 +5,10 @@
       "autocomplete-snippets"
       "autoflow"
       "background-tips"
-      "busy-signal"
       "git-log"
-      "pretty-json"
       "open-on-github"
       "github"
+      "language-bison-flex"
     ]
     telemetryConsent: "limited"
   editor:
@@ -20,8 +19,7 @@
     userId: "{{@@ atom_user_id @@}}"
   linter:
     lintOnChange: false
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "one-dark-ui": {}
   "spell-check":
     locales: [
