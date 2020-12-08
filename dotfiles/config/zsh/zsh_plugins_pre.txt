@@ -1,3 +1,4 @@
 zsh-users/zsh-autosuggestions
 flavio-a/dotpyvenv
 ohmyzsh/ohmyzsh path:plugins/asdf
+mfaerevaag/wd
