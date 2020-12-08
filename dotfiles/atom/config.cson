@@ -19,7 +19,8 @@
     userId: "{{@@ atom_user_id @@}}"
   linter:
     lintOnChange: false
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "one-dark-ui": {}
   "spell-check":
     locales: [
