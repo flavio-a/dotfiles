@@ -10,6 +10,8 @@ trans_write:
   atom-list-packages: apm list --installed --bare > {1}
 variables:
   ssh_control_path: ~/.ssh/control
+dynvariables:
+  mpsyt_api_key: cat secrets/yt-apikey
 config:
   longkey: false
   banner: true
@@ -69,6 +71,7 @@ profiles:
     - f_gitconfig
     - d_byobu
     - d_xenv
+    - f_mpsyt_config
   atom:
     dotfiles:
     - f_atom_packages.list
@@ -194,3 +197,6 @@ dotfiles:
   f_xscreensaver:
     src: xscreensaver
     dst: ~/.xscreensaver
+  f_mpsyt_config:
+    src: config/mps-youtube/config.json
+    dst: ~/.config/mps-youtube/config.json

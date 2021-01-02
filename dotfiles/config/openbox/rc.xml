@@ -261,7 +261,7 @@
     </keybind>
     <keybind key="C-A-t">
       <action name="Execute">
-        <command>uxterm</command>
+        <command>uxterm byobu</command>
       </action>
     </keybind>
     <keybind key="Print">

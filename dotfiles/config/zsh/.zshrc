@@ -32,10 +32,11 @@ zstyle ':completion:*' use-compctl false
 zstyle ':completion:*' verbose true
 
 # History
-setopt share_history
-#setopt extended_history
-setopt hist_ignore_dups
-setopt hist_ignore_space
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_SAVE_NO_DUPS
 HISTFILE="$ZDOTDIR/histfile"
 HISTSIZE=100000
 SAVEHIST=100000
