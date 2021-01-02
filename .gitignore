@@ -1,2 +1,6 @@
-dotdropvenv
-.pyvenvdir
+# Python environment things (I don't care for this project)
+Pipfile*
+.venv
+
+# Secret values that should not be commited (I could encrypt them, but I don't like gpg) 
+secrets
