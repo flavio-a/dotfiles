@@ -1,0 +1,26 @@
+[Default Applications]
+application/pdf=org.gnome.Evince.desktop
+x-scheme-handler/msteams=teams.desktop
+image/png=xviewer.desktop
+image/jpg=xviewer.desktop
+image/jpeg=xviewer.desktop
+inode/directory=thunar.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
+text/plain=mousepad.desktop
+text/x-tex=texstudio.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-Z40MU0.desktop
+application/gzip=engrampa.desktop
+image/gif=xviewer.desktop
+image/*=xviewer.desktop
+
+[Added Associations]
+text/plain=texstudio.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-Z40MU0.desktop;
+image/jpeg=gimp.desktop;
+image/png=gimp.desktop;
+inode/directory=exo-file-manager.desktop;
+x-scheme-handler/trash=exo-file-manager.desktop;

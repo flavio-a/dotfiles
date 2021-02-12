@@ -72,6 +72,7 @@ profiles:
     - d_byobu
     - d_xenv
     - f_mpsyt_config
+    - f_mimeapps.list
   atom:
     dotfiles:
     - f_atom_packages.list
@@ -200,3 +201,6 @@ dotfiles:
   f_mpsyt_config:
     src: config/mps-youtube/config.json
     dst: ~/.config/mps-youtube/config.json
+  f_mimeapps.list:
+    src: config/mimeapps.list
+    dst: ~/.config/mimeapps.list

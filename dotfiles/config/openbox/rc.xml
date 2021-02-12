@@ -769,5 +769,11 @@
     <application name="xterm">
       <maximized>yes</maximized>
     </application>
+    <application name="evince">
+      <maximized>yes</maximized>
+    </application>
+    <application role="browser">
+      <maximized>yes</maximized>
+    </application>
   </applications>
 </openbox_config>
