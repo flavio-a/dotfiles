@@ -10,24 +10,25 @@ trans_write:
   atom-list-packages: apm list --installed --bare > {1}
 variables:
   ssh_control_path: ~/.ssh/control
-dynvariables:
-  mpsyt_api_key: cat secrets/yt-apikey
 config:
-  longkey: false
-  banner: true
-  keepdot: false
-  dotpath: dotfiles
-  showdiff: false
-  workdir: ~/.config/dotdrop
   backup: true
+  banner: true
   cmpignore:
   - '*~'
-  ignoreempty: false
   create: true
-  link_on_import: nolink
+  dotpath: dotfiles
+  ignoreempty: false
+  import_variables:
+  - secret-vars.yaml
+  keepdot: false
   link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+  showdiff: true
+  template_dotfile_default: false
   upignore:
   - '*~'
+  workdir: ~/.config/dotdrop
 profiles:
   marvin:
     include:
@@ -41,6 +42,7 @@ profiles:
       atom_user_id: fdd86f3e-38a3-4c44-a218-73ff4584d223
     dotfiles:
     - f_asoundrc
+    - f_openbox_mylayout.sh
   uz:
     include:
     - atom
@@ -89,6 +91,7 @@ profiles:
   openbox:
     dotfiles:
     - d_openbox
+    # - f_openbox_mylayout.sh
     - d_tint2
     - f_xscreensaver
 dotfiles:
@@ -101,6 +104,7 @@ dotfiles:
     dst: ~/.config/sh
     upignore:
     - dir_colors
+    template: true
   f_zshenv:
     src: zshenv
     dst: ~/.zshenv
@@ -120,11 +124,13 @@ dotfiles:
     actions:
     - zsh-bundle-plugins "{{@@ _dotfile_abs_dst @@}}/zsh_plugins_pre"
     - zsh-bundle-plugins "{{@@ _dotfile_abs_dst @@}}/zsh_plugins_post"
+    template: true
   f_ssh_config:
     src: ssh/config
     dst: ~/.ssh/config
     actions:
     - ssh-create-control-dir
+    template: true
   f_shrc:
     src: shrc
     dst: ~/.shrc
@@ -146,12 +152,14 @@ dotfiles:
   f_atom_config.cson:
     src: atom/config.cson
     dst: ~/.atom/config.cson
+    template: true
   f_atom_keymap.cson:
     src: atom/keymap.cson
     dst: ~/.atom/keymap.cson
   f_bashrc:
     src: bashrc
     dst: ~/.bashrc
+    template: true
   f_xfce4-helpers.rc:
     src: config/xfce4/helpers.rc
     dst: ~/.config/xfce4/helpers.rc
@@ -182,9 +190,15 @@ dotfiles:
     cmpignore:
     - sfondi
     - lxqt-rc.xml
+    - mylayout.sh
     upignore:
     - sfondi
     - lxqt-rc.xml
+    - mylayout.sh
+  f_openbox_mylayout.sh:
+    src: config/openbox/mylayout.sh
+    dst: ~/.config/openbox/mylayout.sh
+    chmod: '600'
   d_byobu:
     src: config/byobu
     dst: ~/.config/byobu
@@ -196,11 +210,12 @@ dotfiles:
     src: config/Xenv
     dst: ~/.config/Xenv
   f_xscreensaver:
-    src: xscreensaver
+    src: xscreensaver-{{@@ profile @@}}
     dst: ~/.xscreensaver
   f_mpsyt_config:
     src: config/mps-youtube/config.json
     dst: ~/.config/mps-youtube/config.json
+    template: true
   f_mimeapps.list:
     src: config/mimeapps.list
     dst: ~/.config/mimeapps.list

@@ -13,9 +13,5 @@
 (setq-default tab-width 4)
 (defvaralias 'c-basic-offset 'tab-width)
 
-{%@@ if profile == "uz" -@@%}
-
 (global-set-key "\M-[1;5C"    'forward-word)  ; Ctrl+right   => forward word
 (global-set-key "\M-[1;5D"    'backward-word) ; Ctrl+left    => backward word
-
-{%@@ endif @@%}

@@ -5,6 +5,9 @@ Host *
 	ControlMaster auto
 	ControlPath {{@@ ssh_control_path @@}}/%r@%h:%p
 
+{%@@ endif -@@%}
+# ================ UZ  ================
+
 Host uzSsh2 uzSsh cloud
 	User Flavio_a
 	HostName ssh2.uz.sns.it
@@ -21,9 +24,7 @@ Host amaldi
 	Hostname amaldi.uz.sns.it
 	User root
 	Port 2222
-{%@@ endif -@@%}
 
-{%@@ if profile == "uz" @@%}
 Host kraft
 	Hostname kraft.area51.sns.it
 	User main
@@ -33,7 +34,6 @@ Host shuttle
 	Hostname shuttle.uz.sns.it
 	User root
 	Port 2222
-{%@@ endif @@%}
 
 Host k2
 	Hostname k2.uz.sns.it
@@ -65,7 +65,8 @@ Host cortana
 	User geoguessrbot
 	IdentityFile ~/.ssh/ssh_key_uz
 
+# =============== MISC ===============
+
 Host phi19
 	Hostname c6320p-2.itc.unipi.it
 	User ascari-spm20
-#	User f.ascari
