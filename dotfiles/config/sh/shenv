@@ -1,7 +1,10 @@
-{%@@ if profile == "uz" @@%}
+{{@@ header('# ') @@}}
+{%@@ if profile == "uz" -@@%}
+
 # Uz profile
 export DOTDROP_PROFILE="uz"
-{%@@ endif @@%}
+
+{%@@- endif @@%}
 
 # Add things to path
 export PATH="${HOME}/.local/bin:$PATH"

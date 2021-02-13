@@ -1,5 +1,5 @@
 ;; backup in one place. flat, no tree structure
-(setq backup-directory-alist '(("" . "/dev/shm/emacs-backup")))
+(setq backup-directory-alist '(("" . "/tmp/emacs-backup")))
 
 ;; lua-mode
 (add-to-list 'load-path "/home/flavio/.emacs.d/elpa")
@@ -12,6 +12,3 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 (defvaralias 'c-basic-offset 'tab-width)
-
-(global-set-key "\M-[1;5C"    'forward-word)  ; Ctrl+right   => forward word
-(global-set-key "\M-[1;5D"    'backward-word) ; Ctrl+left    => backward word
