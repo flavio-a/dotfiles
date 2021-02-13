@@ -11,6 +11,11 @@ fi
 alias emacs="emacs -nw"
 alias mkdir="mkdir -p"
 
+# This makes ctrl+arrow works through ssh in byobu
+if [ $TERM = 'screen-256color' ]; then
+   alias ssh='TERM="xterm-256color" ssh'
+fi
+
 # Custom aliases
 alias l="ls"
 alias ll="ls -la"
