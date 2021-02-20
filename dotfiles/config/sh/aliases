@@ -31,6 +31,7 @@ alias venv-rebuild='rm -rf $(cat .pyvenvdir) && python3 -m venv $(cat .pyvenvdir
 alias monta-common="sshfs ssh2.uz.sns.it:common/ ~/sshfsMountPoint"
 alias smonta-sshfs="fusermount --unmount ~/sshfsMountPoint/"
 alias poll-here="while true; do touch cusu.tmp; rm cusu.tmp; echo polled; sleep 100; done"
+alias mount-dati="mount /mnt/Dati; cd /mnt/Dati; poll-here"
 alias locip="ip a | grep 'inet '"
 alias temp="sensors | grep -A4 coretemp"
 

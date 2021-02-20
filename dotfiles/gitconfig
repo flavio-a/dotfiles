@@ -5,3 +5,5 @@
 	editor = emacs -nw
 [alias]
 	logadog = log --abbrev --graph --decorate --oneline --all
+[pull]
+	rebase = true
