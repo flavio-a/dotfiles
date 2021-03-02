@@ -52,7 +52,6 @@ profiles:
     - bash
     - misc
     - openbox
-    # - xfce4
     variables:
       atom_user_id: 36ea07cf-bb1d-4689-9c15-e24f14a5b7d0
   sh:
@@ -80,14 +79,6 @@ profiles:
     - f_atom_packages.list
     - f_atom_config.cson
     - f_atom_keymap.cson
-  xfce4:
-    dotfiles:
-    - f_xfce4-helpers.rc
-    - f_xfce4-screenshooter
-    - f_xfce4-keyboard-shortcuts.xml
-    - f_xfce4-power-manager.xml
-    - d_xfce4-panel
-    - f_xfce4-panel.xml
   openbox:
     dotfiles:
     - d_openbox
@@ -161,24 +152,6 @@ dotfiles:
     src: bashrc
     dst: ~/.bashrc
     template: true
-  f_xfce4-helpers.rc:
-    src: config/xfce4/helpers.rc
-    dst: ~/.config/xfce4/helpers.rc
-  f_xfce4-screenshooter:
-    src: config/xfce4/xfce4-screenshooter
-    dst: ~/.config/xfce4/xfce4-screenshooter
-  f_xfce4-keyboard-shortcuts.xml:
-    src: config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
-    dst: ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
-  f_xfce4-power-manager.xml:
-    src: config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
-    dst: ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
-  d_xfce4-panel:
-    src: config/xfce4/panel
-    dst: ~/.config/xfce4/panel
-  f_xfce4-panel.xml:
-    src: config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
-    dst: ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
   f_asoundrc:
     src: asoundrc
     dst: ~/.asoundrc
