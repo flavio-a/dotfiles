@@ -14,7 +14,7 @@
   "SHOW_STATUS": true,
   "ALWAYS_REPEAT": false,
   "COLUMNS": "",
-  "DDIR": "/tmp/mps",
+  "DDIR": "/home/flavio/Music/mpsyt/unsorted",
   "OVERWRITE": true,
   "SHOW_VIDEO": false,
   "SEARCH_MUSIC": false,

@@ -43,6 +43,7 @@ profiles:
     dotfiles:
     - f_asoundrc
     - f_openbox_mylayout.sh
+    - f_mimeapps.list
   uz:
     include:
     - atom
@@ -74,7 +75,6 @@ profiles:
     - d_byobu
     - d_xenv
     - f_mpsyt_config
-    - f_mimeapps.list
   atom:
     dotfiles:
     - f_atom_packages.list
@@ -94,6 +94,7 @@ profiles:
     # - f_openbox_mylayout.sh
     - d_tint2
     - f_xscreensaver
+    - d_caffeine
 dotfiles:
   d_sh:
     src: config/sh
@@ -219,3 +220,6 @@ dotfiles:
   f_mimeapps.list:
     src: config/mimeapps.list
     dst: ~/.config/mimeapps.list
+  d_caffeine:
+    src: config/caffeine
+    dst: ~/.config/caffeine
