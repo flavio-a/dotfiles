@@ -1,0 +1,24 @@
+config:
+  backup: false
+  banner: false
+  cmpignore:
+  - '*~'
+  create: true
+  dotpath: sys-dotfiles
+  ignoreempty: false
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+  showdiff: true
+  template_dotfile_default: false
+  upignore:
+  - '*~'
+profiles:
+  marvin:
+    dotfiles:
+    - d_tlp.d
+dotfiles:
+  d_tlp.d:
+    src: etc/tlp.d
+    dst: /etc/tlp.d
