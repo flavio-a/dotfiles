@@ -118,13 +118,12 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>3</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>main</name>
       <name>uni</name>
       <name>desktop 3</name>
-      <name>desktop 4</name>
     </names>
     <popupTime>1000</popupTime>
     <!-- The number of milliseconds to show the popup for when switching

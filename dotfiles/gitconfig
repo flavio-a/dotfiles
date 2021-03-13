@@ -1,9 +1,10 @@
 [user]
-	email = flavio.a.618@gmail.com
-	name = Flavio
+    email = flavio.a.618@gmail.com
+    name = Flavio
+    signingkey = F28B65370CFB1E24
 [core]
-	editor = emacs -nw
+    editor = emacs -nw
 [alias]
-	logadog = log --abbrev --graph --decorate --oneline --all
+    logadog = log --abbrev --graph --decorate --oneline --all
 [pull]
-	rebase = true
+    rebase = true
