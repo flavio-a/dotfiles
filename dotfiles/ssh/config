@@ -5,6 +5,7 @@ IdentityFile ~/.ssh/github-sshkey
 Host *
 	ControlMaster auto
 	ControlPath {{@@ ssh_control_path @@}}/%r@%h:%p
+	VisualHostKey yes
 
 {%@@ endif -@@%}
 # ================ UZ  ================

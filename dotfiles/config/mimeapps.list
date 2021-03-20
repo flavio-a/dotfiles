@@ -16,6 +16,7 @@ x-scheme-handler/tg=userapp-Telegram Desktop-Z40MU0.desktop
 application/gzip=engrampa.desktop
 image/gif=xviewer.desktop
 image/*=xviewer.desktop
+image/svg+xml=org.inkscape.Inkscape.desktop
 
 [Added Associations]
 text/plain=texstudio.desktop;
