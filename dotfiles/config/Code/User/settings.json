@@ -1,0 +1,8 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "window.menuBarVisibility": "compact",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.dragAndDrop": false,
+    "editor.fontSize": 15
+}

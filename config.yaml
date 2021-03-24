@@ -32,14 +32,15 @@ config:
 profiles:
   marvin:
     include:
-    - atom
+    # - atom
     - sh
     - zsh
     - bash
     - misc
     - openbox
-    variables:
-      atom_user_id: fdd86f3e-38a3-4c44-a218-73ff4584d223
+    - vscode
+    # variables:
+    #   atom_user_id: fdd86f3e-38a3-4c44-a218-73ff4584d223
     dotfiles:
     - f_asoundrc
     - f_openbox_mylayout.sh
@@ -86,6 +87,11 @@ profiles:
     - d_tint2
     - f_xscreensaver
     - d_caffeine
+  vscode:
+    dotfiles:
+    - f_vscode_settings.json
+    - f_vscode_keybindings.json
+    - d_vscode_snippets
 dotfiles:
   d_sh:
     src: config/sh
@@ -196,3 +202,12 @@ dotfiles:
   d_caffeine:
     src: config/caffeine
     dst: ~/.config/caffeine
+  f_vscode_settings.json:
+    src: config/Code/User/settings.json
+    dst: ~/.config/Code - OSS/User/settings.json
+  f_vscode_keybindings.json:
+    src: config/Code/User/keybindings.json
+    dst: ~/.config/Code - OSS/User/keybindings.json
+  d_vscode_snippets:
+    src: config/Code/User/snippets
+    dst: ~/.config/Code - OSS/User/snippets
