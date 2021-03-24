@@ -27,11 +27,6 @@ Host amaldi
 	User root
 	Port 2222
 
-Host kraft
-	Hostname kraft.area51.sns.it
-	User main
-	IdentityFile ~/.ssh/ssh_key_uz
-
 Host shuttle
 	Hostname shuttle.uz.sns.it
 	User root
