@@ -39,6 +39,7 @@ profiles:
     - misc
     - openbox
     - vscode
+    - av
     # variables:
     #   atom_user_id: fdd86f3e-38a3-4c44-a218-73ff4584d223
     dotfiles:
@@ -53,6 +54,7 @@ profiles:
     - bash
     - misc
     - openbox
+    - av
     variables:
       atom_user_id: 36ea07cf-bb1d-4689-9c15-e24f14a5b7d0
   sh:
@@ -74,7 +76,6 @@ profiles:
     - f_gitconfig
     - d_byobu
     - d_xenv
-    - f_mpsyt_config
   atom:
     dotfiles:
     - f_atom_packages.list
@@ -92,6 +93,10 @@ profiles:
     - f_vscode_settings.json
     - f_vscode_keybindings.json
     - d_vscode_snippets
+  av:
+    dotfiles:
+    - f_mpsyt_config
+    - d_mpv
 dotfiles:
   d_sh:
     src: config/sh
@@ -211,3 +216,7 @@ dotfiles:
   d_vscode_snippets:
     src: config/Code/User/snippets
     dst: ~/.config/Code - OSS/User/snippets
+  d_mpv:
+    src: config/mpv
+    dst: ~/.config/mpv
+    chmod: '700'
