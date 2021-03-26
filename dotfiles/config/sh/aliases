@@ -22,7 +22,8 @@ alias l="ls"
 alias ll="ls -la"
 alias cd.="cd ."
 alias cd..="cd .."
-alias atom.="atom ."
+# alias atom.="atom ."
+alias code.="code ."
 alias venv-rebuild='rm -rf $(cat .pyvenvdir) && python3 -m venv $(cat .pyvenvdir) && source "$(cat .pyvenvdir)/bin/activate" && pip --version'
 
 {%@@ if profile == "marvin" @@%}
@@ -30,7 +31,7 @@ alias venv-rebuild='rm -rf $(cat .pyvenvdir) && python3 -m venv $(cat .pyvenvdir
 {#@@- marvin only aliases @@#}
 alias monta-common="sshfs ssh2.uz.sns.it:common/ ~/sshfsMountPoint"
 alias smonta-sshfs="fusermount --unmount ~/sshfsMountPoint/"
-alias poll-here="while true; do touch cusu.tmp; rm cusu.tmp; echo polled; sleep 100; done"
+alias poll-here="while true; do touch _cusu.tmp; rm _cusu.tmp; echo polled; sleep 60; done"
 alias mount-dati="mount /mnt/Dati; cd /mnt/Dati; poll-here"
 alias locip="ip a | grep 'inet '"
 alias temp="sensors | grep -A4 coretemp"

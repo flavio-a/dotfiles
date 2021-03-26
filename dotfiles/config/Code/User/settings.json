@@ -4,5 +4,12 @@
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "none",
     "editor.dragAndDrop": false,
-    "editor.fontSize": 15
+    "editor.fontSize": 15,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.rulers": [
+        79, 119
+    ],
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "explorer.confirmDragAndDrop": false
 }
