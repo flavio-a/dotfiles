@@ -44,7 +44,6 @@ profiles:
     #   atom_user_id: fdd86f3e-38a3-4c44-a218-73ff4584d223
     dotfiles:
     - f_asoundrc
-    - f_openbox_mylayout.sh
     - f_mimeapps.list
   uz:
     include:
@@ -84,7 +83,7 @@ profiles:
   openbox:
     dotfiles:
     - d_openbox
-    # - f_openbox_mylayout.sh
+    - d_autorandr
     - d_tint2
     - f_xscreensaver
     - d_caffeine
@@ -175,15 +174,9 @@ dotfiles:
     cmpignore:
     - sfondi
     - lxqt-rc.xml
-    - mylayout.sh
     upignore:
     - sfondi
     - lxqt-rc.xml
-    - mylayout.sh
-  f_openbox_mylayout.sh:
-    src: config/openbox/mylayout.sh
-    dst: ~/.config/openbox/mylayout.sh
-    chmod: '600'
   d_byobu:
     src: config/byobu
     dst: ~/.config/byobu
@@ -220,3 +213,6 @@ dotfiles:
     src: config/mpv
     dst: ~/.config/mpv
     chmod: '700'
+  d_autorandr:
+    src: config/autorandr
+    dst: ~/.config/autorandr

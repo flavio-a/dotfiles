@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sh ${HOME}/.config/openbox/mylayout.sh
+autorandr --change
 tint2 &
 numlockx &
 sh ${HOME}/.config/Xenv/xinitrc
