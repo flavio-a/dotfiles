@@ -40,6 +40,7 @@ profiles:
     - openbox
     - vscode
     - av
+    - gpg-agent
     # variables:
     #   atom_user_id: fdd86f3e-38a3-4c44-a218-73ff4584d223
     dotfiles:
@@ -96,6 +97,10 @@ profiles:
     dotfiles:
     - f_mpsyt_config
     - d_mpv
+  gpg-agent:
+    dotfiles:
+    - f_gpg-agent.conf
+    - f_gpg_sshcontrol
 dotfiles:
   d_sh:
     src: config/sh
@@ -216,3 +221,11 @@ dotfiles:
   d_autorandr:
     src: config/autorandr
     dst: ~/.config/autorandr
+  f_gpg-agent.conf:
+    src: gnupg/gpg-agent.conf
+    dst: ~/.gnupg/gpg-agent.conf
+    chmod: '644'
+  f_gpg_sshcontrol:
+    src: gnupg/sshcontrol
+    dst: ~/.gnupg/sshcontrol
+    chmod: '644'

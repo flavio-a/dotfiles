@@ -11,5 +11,6 @@
     ],
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "Lua.telemetry.enable": true
 }
