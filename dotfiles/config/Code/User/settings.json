@@ -9,8 +9,8 @@
     "editor.rulers": [
         79, 119
     ],
-    "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "explorer.confirmDragAndDrop": false,
-    "Lua.telemetry.enable": true
+    "Lua.telemetry.enable": true,
+    "trailing-spaces.highlightCurrentLine": false
 }
