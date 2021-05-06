@@ -7,6 +7,11 @@ Host *
 	ControlPath {{@@ ssh_control_path @@}}/%r@%h:%p
 	VisualHostKey yes
 
+{%@@ else @@%}
+
+Host *
+	VisualHostKey yes
+
 {%@@ endif -@@%}
 # ================ UZ  ================
 

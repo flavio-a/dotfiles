@@ -123,7 +123,7 @@
     <names>
       <name>main</name>
       <name>uni</name>
-      <name>desktop 3</name>
+      <name>dnd</name>
     </names>
     <popupTime>1000</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -288,9 +288,9 @@
         <command>gmrun</command>
       </action>
     </keybind>
-    <keybind key="W-e">
+    <keybind key="W-w">
       <action name="Execute">
-        <command>thunar</command>
+        <command>pcmanfm</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
