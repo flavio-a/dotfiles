@@ -255,6 +255,11 @@
         <command>~/.config/openbox/lock-screen.sh</command>
       </action>
     </keybind>
+    <keybind key="C-A-k">
+      <action name="Execute">
+        <command>~/.config/openbox/lock-screen.sh -k</command>
+      </action>
+    </keybind>
     <keybind key="C-A-o">
       <action name="Exit"/>
     </keybind>

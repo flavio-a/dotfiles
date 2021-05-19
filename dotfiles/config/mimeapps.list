@@ -25,3 +25,4 @@ image/jpeg=gimp.desktop;
 image/png=gimp.desktop;
 inode/directory=exo-file-manager.desktop;
 x-scheme-handler/trash=exo-file-manager.desktop;
+application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;engrampa.desktop;
