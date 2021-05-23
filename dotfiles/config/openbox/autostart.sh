@@ -1,10 +1,12 @@
 #!/bin/sh
 
+obconfdir="${HOME}/.config/openbox"
+
 autorandr --change
 tint2 &
 numlockx &
-sh ${HOME}/.config/Xenv/xinitrc
+xrdb ~/.config/Xenv/Xresources
 uxterm -e "byobu" &
-sh ~/.config/openbox/start-tg.sh &
+sh ${obconfdir}/start-tg.sh &
 xscreensaver &
-caffeine &
+sh ${obconfdir}/xscreensaver-monitor.sh &
