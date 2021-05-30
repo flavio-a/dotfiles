@@ -32,7 +32,6 @@ config:
 profiles:
   marvin:
     include:
-    # - atom
     - sh
     - zsh
     - bash
@@ -41,8 +40,6 @@ profiles:
     - vscode
     - av
     - gpg-agent
-    # variables:
-    #   atom_user_id: fdd86f3e-38a3-4c44-a218-73ff4584d223
     dotfiles:
     - f_asoundrc
     - f_mimeapps.list
@@ -88,6 +85,7 @@ profiles:
     - d_tint2
     - f_xscreensaver
     - d_caffeine
+    - d_volumeicon
   vscode:
     dotfiles:
     - f_vscode_settings.json
@@ -229,3 +227,6 @@ dotfiles:
     src: gnupg/sshcontrol
     dst: ~/.gnupg/sshcontrol
     chmod: '644'
+  d_volumeicon:
+    src: config/volumeicon
+    dst: ~/.config/volumeicon

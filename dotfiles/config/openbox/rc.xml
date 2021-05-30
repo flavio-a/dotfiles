@@ -118,11 +118,12 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>3</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>main</name>
       <name>uni</name>
+      <name>other</name>
       <name>dnd</name>
     </names>
     <popupTime>1000</popupTime>

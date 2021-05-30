@@ -7,7 +7,7 @@ caffeine &
 xscreensaver-command --watch | while IFS= read -r action; do
     # echo "Parsed action: ${action%% *}"
     case "${action%% *}" in
-        "UNBLANK") caffeine & ;;
+        "UNBLANK") pkill -f caffeine-ng && caffeine & ;;
         "LOCK")    pkill -f caffeine-ng ;;
     esac
 done
