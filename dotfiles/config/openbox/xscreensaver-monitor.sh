@@ -5,9 +5,9 @@ caffeine &
 
 # Kill and restart caffeine when screen is locked/unlocked
 xscreensaver-command --watch | while IFS= read -r action; do
-    # echo "Parsed action: ${action%% *}"
     case "${action%% *}" in
-        "UNBLANK") pkill -f caffeine-ng && caffeine & ;;
+        "UNBLANK") caffeine & ;;
+        "BLANK")   pkill -f caffeine-ng ;;
         "LOCK")    pkill -f caffeine-ng ;;
     esac
 done
