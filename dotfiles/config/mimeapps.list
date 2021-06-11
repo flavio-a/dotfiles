@@ -19,7 +19,6 @@ image/*=xviewer.desktop
 image/svg+xml=org.inkscape.Inkscape.desktop
 
 [Added Associations]
-text/plain=texstudio.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-Z40MU0.desktop;
 image/jpeg=gimp.desktop;
 image/png=gimp.desktop;

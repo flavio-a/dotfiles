@@ -1,8 +1,6 @@
 # Define path for sh config file
 SHDOTDIR="$HOME/.config/sh"
 
-# Things to source:
-
 ## Remove background colors from folders in ls
 source "$SHDOTDIR/dir_colors"
 
