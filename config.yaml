@@ -85,7 +85,7 @@ profiles:
     - d_tint2
     - f_xscreensaver
     - d_caffeine
-    - d_volumeicon
+    - f_xfce4-notifyd.xml
     - d_autostart
   vscode:
     dotfiles:
@@ -235,3 +235,6 @@ dotfiles:
     src: config/autostart
     dst: ~/.config/autostart
     chmod: '755'
+  f_xfce4-notifyd.xml:
+    src: config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
+    dst: ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
