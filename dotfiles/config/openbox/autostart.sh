@@ -10,4 +10,4 @@ uxterm -e "byobu" &
 sh ${obconfdir}/start-tg.sh &
 xscreensaver &
 sh ${obconfdir}/xscreensaver-monitor.sh &
-pa-applet &
+# pa-applet &
