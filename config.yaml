@@ -89,9 +89,14 @@ profiles:
     - d_autostart
   vscode:
     dotfiles:
+    # Code - OSS
     - f_vscode_settings.json
     - f_vscode_keybindings.json
     - d_vscode_snippets
+    # VSCodium
+    - f_codium_settings.json
+    - f_codium_keybindings.json
+    - d_codium_snippets
   av:
     dotfiles:
     - f_mpsyt_config
@@ -238,3 +243,12 @@ dotfiles:
   f_xfce4-notifyd.xml:
     src: config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
     dst: ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
+  f_codium_settings.json:
+    src: config/Code/User/settings.json
+    dst: ~/.config/VSCodium/User/settings.json
+  f_codium_keybindings.json:
+    src: config/Code/User/keybindings.json
+    dst: ~/.config/VSCodium/User/keybindings.json
+  d_codium_snippets:
+    src: config/Code/User/snippets
+    dst: ~/.config/VSCodium/User/snippets
