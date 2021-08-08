@@ -17,11 +17,12 @@ application/gzip=engrampa.desktop
 image/gif=xviewer.desktop
 image/*=xviewer.desktop
 image/svg+xml=org.inkscape.Inkscape.desktop
+image/x-ms-bmp=xviewer.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Telegram Desktop-Z40MU0.desktop;
 image/jpeg=gimp.desktop;
-image/png=gimp.desktop;
+image/png=org.kde.kolourpaint.desktop;pinta.desktop;gimp.desktop;
 inode/directory=exo-file-manager.desktop;
 x-scheme-handler/trash=exo-file-manager.desktop;
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;engrampa.desktop;

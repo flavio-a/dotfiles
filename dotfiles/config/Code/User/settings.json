@@ -12,5 +12,6 @@
     "files.trimFinalNewlines": true,
     "explorer.confirmDragAndDrop": false,
     "Lua.telemetry.enable": true,
-    "trailing-spaces.highlightCurrentLine": false
+    "trailing-spaces.highlightCurrentLine": false,
+    "diffEditor.ignoreTrimWhitespace": false
 }
