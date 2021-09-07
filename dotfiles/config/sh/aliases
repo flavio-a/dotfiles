@@ -22,9 +22,8 @@ alias l="ls"
 alias ll="ls -la"
 alias cd.="cd ."
 alias cd..="cd .."
-# alias atom.="atom ."
 alias code.="code ."
-alias venv-rebuild='rm -rf $(cat .pyvenvdir) && python3 -m venv $(cat .pyvenvdir) && source "$(cat .pyvenvdir)/bin/activate" && pip --version'
+alias codium.="codium ."
 
 {%@@ if profile == "marvin" @@%}
 

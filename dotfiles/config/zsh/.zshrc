@@ -48,7 +48,7 @@ REPORTTIME=5
 setopt AUTO_CONTINUE
 
 # Changing prompt
-{%@@ if profile == "marvin" @@%}
+{%@@ if profile == "marvin" or profile == "zenithia" @@%}
 export PROMPT='%F{green}%n@%m%f> '
 {%@@ endif @@%}
 {%@@ if profile == "uz" @@%}

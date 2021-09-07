@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BG_DIR="$HOME/.config/openbox/sfondi/"
+BG_DIR="$HOME/.config/openbox/wallpapers/"
 HEAD1="default"
 
 if [ -f "$BG_DIR/$HOSTNAME" ]; then

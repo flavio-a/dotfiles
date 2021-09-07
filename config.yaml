@@ -37,11 +37,23 @@ profiles:
     - bash
     - misc
     - openbox
-    - vscode
+    - codeoss
     - av
     - gpg-agent
     dotfiles:
     - f_asoundrc
+    - f_mimeapps.list
+  zenithia:
+    include:
+    - sh
+    - zsh
+    - bash
+    - misc
+    - openbox
+    - vscodium
+    - av
+    - gpg-agent
+    dotfiles:
     - f_mimeapps.list
   uz:
     include:
@@ -87,13 +99,13 @@ profiles:
     - d_caffeine
     - f_xfce4-notifyd.xml
     - d_autostart
-  vscode:
+  codeoss:
     dotfiles:
-    # Code - OSS
     - f_vscode_settings.json
     - f_vscode_keybindings.json
     - d_vscode_snippets
-    # VSCodium
+  vscodium:
+    dotfiles:
     - f_codium_settings.json
     - f_codium_keybindings.json
     - d_codium_snippets
@@ -181,10 +193,10 @@ dotfiles:
     src: config/openbox
     dst: ~/.config/openbox
     cmpignore:
-    - sfondi
+    - wallpapers
     - lxqt-rc.xml
     upignore:
-    - sfondi
+    - wallpapers
     - lxqt-rc.xml
   d_byobu:
     src: config/byobu

@@ -9,4 +9,4 @@
 [pull]
     rebase = true
 [gpg]
-    program = gpg2
+    program = gpg
