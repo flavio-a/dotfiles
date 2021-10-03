@@ -236,7 +236,7 @@ dotfiles:
     dst: ~/.config/mpv
     chmod: '700'
   d_autorandr:
-    src: config/autorandr
+    src: config/autorandr-{{@@ profile @@}}
     dst: ~/.config/autorandr
   f_gpg-agent.conf:
     src: gnupg/gpg-agent.conf
