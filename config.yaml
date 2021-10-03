@@ -193,10 +193,10 @@ dotfiles:
     src: config/openbox
     dst: ~/.config/openbox
     cmpignore:
-    - wallpapers
+    - wallpapers/*
     - lxqt-rc.xml
     upignore:
-    - wallpapers
+    - wallpapers/*
     - lxqt-rc.xml
   d_byobu:
     src: config/byobu
@@ -218,7 +218,6 @@ dotfiles:
   f_mimeapps.list:
     src: config/mimeapps.list
     dst: ~/.config/mimeapps.list
-    chmod: '600'
   d_caffeine:
     src: config/caffeine
     dst: ~/.config/caffeine
@@ -234,7 +233,6 @@ dotfiles:
   d_mpv:
     src: config/mpv
     dst: ~/.config/mpv
-    chmod: '700'
   d_autorandr:
     src: config/autorandr-{{@@ profile @@}}
     dst: ~/.config/autorandr

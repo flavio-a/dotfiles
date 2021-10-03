@@ -25,11 +25,12 @@ application/x-extension-shtml=firefox.desktop
 application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
+text/x-arduino=arduino-arduinoide.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Telegram Desktop-Z40MU0.desktop;userapp-Telegram Desktop.desktop;
 image/jpeg=gimp.desktop;
-image/png=org.kde.kolourpaint.desktop;pinta.desktop;gimp.desktop;
+image/png=lximage-qt.desktop;org.kde.kolourpaint.desktop;pinta.desktop;gimp.desktop;
 inode/directory=exo-file-manager.desktop;
 x-scheme-handler/trash=exo-file-manager.desktop;
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;engrampa.desktop;
@@ -44,3 +45,4 @@ application/xhtml+xml=userapp-Firefox-OHSD90.desktop;
 application/x-extension-xhtml=userapp-Firefox-OHSD90.desktop;
 application/x-extension-xht=userapp-Firefox-OHSD90.desktop;
 text/markdown=com.visualstudio.code-oss.desktop;
+application/pdf=xournal.desktop;gimp.desktop;

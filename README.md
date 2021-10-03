@@ -2,7 +2,8 @@
 Just my dotfiles
 
 # TODO
-Nothing to do (at least that I'm aware of), yay ^^
+- Fixup asdf zsh plugin. Right now, I use a locally modified version
+  of the oh-my-zsh plugin, but this is clearly not a good solution.
 
 # Dependencies
 This repo depends on dotdrop, already listed as submodule
