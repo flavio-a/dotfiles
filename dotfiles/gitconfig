@@ -10,3 +10,7 @@
     rebase = true
 [gpg]
     program = gpg
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = master

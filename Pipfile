@@ -10,6 +10,8 @@ docopt = "*"
 "ruamel.yaml" = "*"
 Jinja2 = "*"
 python-magic = "*"
+requests = "*"
+packaging = "*"
 
 [requires]
 python_version = "3"

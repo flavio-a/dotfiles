@@ -1,6 +1,10 @@
 {{@@ header('# ') @@}}
-{%@@ if profile == "marvin" or profile == "zenithia" @@%}
+
+{%@@- if profile == "marvin" @@%}
 IdentityFile ~/.ssh/github-sshkey
+{%@@ endif -@@%}
+
+{%@@ if profile == "marvin" or profile == "zenithia" @@%}
 
 Host *
 	ControlMaster auto

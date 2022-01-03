@@ -218,6 +218,7 @@ dotfiles:
   f_mimeapps.list:
     src: config/mimeapps.list
     dst: ~/.config/mimeapps.list
+    chmod: '644'
   d_caffeine:
     src: config/caffeine
     dst: ~/.config/caffeine
