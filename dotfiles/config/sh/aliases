@@ -25,15 +25,11 @@ alias cd..="cd .."
 alias code.="code ."
 alias codium.="codium ."
 
-{%@@ if profile == "marvin" @@%}
+{%@@ if profile == "zenithia" @@%}
 
-{#@@- marvin only aliases @@#}
-alias monta-common="sshfs ssh2.uz.sns.it:common/ ~/sshfsMountPoint"
-alias smonta-sshfs="fusermount --unmount ~/sshfsMountPoint/"
-alias poll-here="while true; do touch _cusu.tmp; rm _cusu.tmp; echo polled; sleep 60; done"
+{#@@- zenithia only aliases @@#}
+alias poll-here="while true; do touch ._cusu.tmp; rm ._cusu.tmp; echo polled; sleep 3; done"
 alias mount-dati="mount /mnt/Dati; cd /mnt/Dati; poll-here"
-alias locip="ip a | grep 'inet '"
-alias temp="sensors | grep -A4 coretemp"
 
 {%@@ elif profile == "uz" @@%}
 

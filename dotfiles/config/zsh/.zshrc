@@ -71,3 +71,8 @@ fi
 
 # Disable Ctrl-S to pause terminal
 stty -ixon
+
+# Open a file with a GUI program (determined by xdg)
+gopen() {
+    xdg-open "$1" &> /dev/null &; disown
+}

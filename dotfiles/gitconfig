@@ -1,7 +1,7 @@
 [user]
     email = flavio.a.618@gmail.com
     name = Flavio
-    signingkey = F28B65370CFB1E24
+    signingkey = 50C652E75EFD451E
 [core]
     editor = emacs -nw
 [alias]
