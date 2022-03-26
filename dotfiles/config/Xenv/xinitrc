@@ -1,2 +1,0 @@
-# export XENVIRONMENT="${HOME}/.config/Xenv/Xresources"
-# xrdb ${HOME}/.config/Xenv/Xresources

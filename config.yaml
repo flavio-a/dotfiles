@@ -53,6 +53,7 @@ profiles:
     - vscodium
     - av
     - gpg-agent
+    - xgeneric
     dotfiles:
     - f_mimeapps.list
   uz:
@@ -84,7 +85,10 @@ profiles:
     - f_ssh_config
     - f_gitconfig
     - d_byobu
+  xgeneric:
+    dotfiles:
     - d_xenv
+    - f_xsessionrc
   atom:
     dotfiles:
     - f_atom_packages.list
@@ -218,7 +222,7 @@ dotfiles:
   f_mimeapps.list:
     src: config/mimeapps.list
     dst: ~/.config/mimeapps.list
-    chmod: '600'
+    chmod: '644'
   d_caffeine:
     src: config/caffeine
     dst: ~/.config/caffeine
@@ -264,3 +268,6 @@ dotfiles:
   d_codium_snippets:
     src: config/Code/User/snippets
     dst: ~/.config/VSCodium/User/snippets
+  f_xsessionrc:
+    src: xsessionrc
+    dst: ~/.xsessionrc

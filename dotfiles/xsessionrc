@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Load Xresources
+XCONFDIR="$HOME/.config/Xenv"
+xrdb "$XCONFDIR/Xresources"
+
+# Export $PATH
+
+export PATH="${HOME}/.local/bin:${HOME}/.cargo/bin:$PATH"

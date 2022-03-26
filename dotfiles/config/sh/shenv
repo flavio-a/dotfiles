@@ -6,8 +6,16 @@ export DOTDROP_PROFILE="uz"
 
 {%@@- endif @@%}
 
-# Add things to path
-export PATH="${HOME}/.local/bin:${HOME}/.cargo/bin:$PATH"
+# Add things to path, only if not already there
+pathadd () {
+    if [ -z "${PATH##*"$1"*}" ]; then
+        true
+    else
+        PATH="$1:$PATH"
+    fi
+}
+pathadd "${HOME}/.cargo/bin"
+pathadd "${HOME}/.local/bin"
 
 # pipenv in project dir
 export PIPENV_VENV_IN_PROJECT="y"
