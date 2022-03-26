@@ -55,3 +55,4 @@ text/x-bibtex=texstudio.desktop;
 text/plain=texstudio.desktop;
 image/gif=lximage-qt.desktop;
 video/x-matroska=mpv.desktop;
+video/x-msvideo=mpv.desktop;

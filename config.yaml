@@ -42,7 +42,6 @@ profiles:
     - gpg-agent
     dotfiles:
     - f_asoundrc
-    - f_mimeapps.list
   zenithia:
     include:
     - sh
@@ -85,6 +84,7 @@ profiles:
     - f_ssh_config
     - f_gitconfig
     - d_byobu
+    - f_mimeapps.list
   xgeneric:
     dotfiles:
     - d_xenv
