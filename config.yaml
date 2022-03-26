@@ -52,9 +52,8 @@ profiles:
     - vscodium
     - av
     - gpg-agent
+    - i3
     - xgeneric
-    dotfiles:
-    - f_mimeapps.list
   uz:
     include:
     - atom
@@ -101,6 +100,14 @@ profiles:
     - d_tint2
     - f_xscreensaver
     - d_caffeine
+    - f_xfce4-notifyd.xml
+    - d_autostart
+  i3:
+    dotfiles:
+    - d_i3
+    - d_autorandr
+    - d_tint2
+    - f_xscreensaver
     - f_xfce4-notifyd.xml
     - d_autostart
   codeoss:
@@ -268,6 +275,9 @@ dotfiles:
   d_codium_snippets:
     src: config/Code/User/snippets
     dst: ~/.config/VSCodium/User/snippets
+  d_i3:
+    src: config/i3
+    dst: ~/.config/i3
   f_xsessionrc:
     src: xsessionrc
     dst: ~/.xsessionrc
