@@ -109,7 +109,7 @@ profiles:
     - d_tint2
     - f_xscreensaver
     - f_xfce4-notifyd.xml
-    - d_autostart
+    - d_systemd_user
   codeoss:
     dotfiles:
     - f_vscode_settings.json
@@ -281,3 +281,6 @@ dotfiles:
   f_xsessionrc:
     src: xsessionrc
     dst: ~/.xsessionrc
+  d_systemd_user:
+    src: config/systemd/user
+    dst: ~/.config/systemd/user

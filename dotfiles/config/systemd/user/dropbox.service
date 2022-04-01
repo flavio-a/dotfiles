@@ -1,0 +1,5 @@
+[Unit]
+Description=Dropbox autostart
+
+[Service]
+ExecStart=/usr/bin/dropbox start

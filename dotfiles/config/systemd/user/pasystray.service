@@ -1,0 +1,5 @@
+[Unit]
+Description=An Applet for PulseAudio
+
+[Service]
+ExecStart=/usr/local/bin/pasystray -g --notify=sink

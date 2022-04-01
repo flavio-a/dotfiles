@@ -1,0 +1,5 @@
+[Unit]
+Description=Lightweight panel
+
+[Service]
+ExecStart=/usr/bin/tint2

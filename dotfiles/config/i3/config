@@ -34,8 +34,7 @@ exec autorandr --change
 exec uxterm -e byobu
 exec sh ~/.config/openbox/start-tg.sh
 exec xscreensaver
-# TODO replace with systemd
-exec dex -as ~/.config/autostart -e i3
+exec systemctl --user start autostart.target
 
 ###############################################################################
 ##                                Keybindings                                ##

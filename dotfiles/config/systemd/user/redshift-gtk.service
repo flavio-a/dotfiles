@@ -1,0 +1,5 @@
+[Unit]
+Description=Color temperature adjustment tool
+
+[Service]
+ExecStart=/usr/bin/redshift-gtk -l 44:10

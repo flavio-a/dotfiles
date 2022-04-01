@@ -1,0 +1,5 @@
+[Unit]
+Description=Systray applet to manage Network Manager
+
+[Service]
+ExecStart=/usr/bin/nm-applet
