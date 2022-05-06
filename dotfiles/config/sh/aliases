@@ -30,7 +30,6 @@ alias codium.="codium ."
 {#@@- zenithia only aliases @@#}
 alias poll-here="while true; do touch ._cusu.tmp; rm ._cusu.tmp; echo polled; sleep 3; done"
 alias mount-dati="mount /mnt/Dati; cd /mnt/Dati; poll-here"
-alias desmume="desmume --fwlang=4"
 
 {%@@ elif profile == "uz" @@%}
 
