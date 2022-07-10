@@ -12,6 +12,8 @@ Jinja2 = "*"
 python-magic = "*"
 requests = "*"
 packaging = "*"
+jinja2 = "*"
+toml = "*"
 
 [requires]
 python_version = "3"

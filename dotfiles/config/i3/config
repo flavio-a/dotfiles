@@ -59,6 +59,10 @@ bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+ograve focus right
+# bindsym $mod+j focus left
+# bindsym $mod+k focus down
+# bindsym $mod+l focus right
+# bindsym $mod+i focus up
 # Alt+tab
 bindsym Mod1+Shift+Tab focus left
 bindsym Mod1+Tab focus right
@@ -67,6 +71,10 @@ bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+ograve move right
+# bindsym $mod+Shift+j move left
+# bindsym $mod+Shift+k move down
+# bindsym $mod+Shift+l move right
+# bindsym $mod+Shift+i move up
 
 # split orientation
 bindsym $mod+h split h
@@ -152,6 +160,7 @@ bindsym $mod+Shift+o exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym Control+Mod1+f exec firefox
 bindsym Control+Mod1+m exec ~/.config/openbox/start-tg.sh
 bindsym Mod4+w exec thunar
+bindsym Control+Mod1+n exec evolution
 bindsym Control+Mod1+l exec xscreensaver-command -lock
 bindsym Print exec --no-startup-id scrot
 # This doesn't work :c

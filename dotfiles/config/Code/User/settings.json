@@ -14,5 +14,6 @@
     "Lua.telemetry.enable": true,
     "trailing-spaces.highlightCurrentLine": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.unicodeHighlight.nonBasicASCII": false
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "agdaMode.connection.agdaPath": "/home/flavio/.local/bin/agda"
 }
