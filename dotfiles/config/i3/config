@@ -31,7 +31,7 @@ workspace_layout tabbed
 
 exec numlockx
 exec autorandr --change
-exec uxterm -e byobu
+exec xfce4-terminal
 exec sh ~/.config/openbox/start-tg.sh
 exec xscreensaver
 exec tint2
@@ -42,7 +42,7 @@ exec systemctl --user start autostart.target
 ###############################################################################
 
 # start a terminal
-bindsym Control+Mod1+t exec "uxterm -e byobu"
+bindsym Control+Mod1+t exec "xfce4-terminal"
 
 # kill focused window
 bindsym Mod1+F4 kill
