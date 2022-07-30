@@ -34,7 +34,6 @@ exec autorandr --change
 exec xfce4-terminal
 exec sh ~/.config/openbox/start-tg.sh
 exec xscreensaver
-exec tint2
 exec systemctl --user start autostart.target
 
 ###############################################################################
