@@ -161,6 +161,7 @@ bindsym Control+Mod1+m exec ~/.config/openbox/start-tg.sh
 bindsym Mod4+w exec thunar
 bindsym Control+Mod1+n exec evolution
 bindsym Control+Mod1+l exec xscreensaver-command -lock
+bindsym Control+Mod1+d exec ~/.local/bin/discord
 bindsym Print exec --no-startup-id scrot
 # This doesn't work :c
 bindsym Mod1+Print exec --release --no-startup-id scrot -s

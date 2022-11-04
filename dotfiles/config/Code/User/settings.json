@@ -15,5 +15,8 @@
     "trailing-spaces.highlightCurrentLine": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.unicodeHighlight.nonBasicASCII": false,
-    "agdaMode.connection.agdaPath": "/home/flavio/.local/bin/agda"
+    "agdaMode.connection.agdaPath": "/home/flavio/.local/bin/agda",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
