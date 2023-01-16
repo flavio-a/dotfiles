@@ -41,22 +41,17 @@ Host shuttle
 	Port 2222
 
 Host k2
-	Hostname k2.uz.sns.it
+	Hostname k2.sns.it
 	User root
 	Port 2222
 
 Host soyuz soy
-	Hostname soyuz.uz.sns.it
+	Hostname soyuz.sns.it
 	User root
 	Port 2222
 
 Host apollo
-	Hostname apollo.uz.sns.it
-	User root
-	Port 2222
-
-Host ariane
-	Hostname ariane.uz.sns.it
+	Hostname apollo.sns.it
 	User root
 	Port 2222
 

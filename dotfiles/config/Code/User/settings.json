@@ -11,12 +11,21 @@
     ],
     "files.trimFinalNewlines": true,
     "explorer.confirmDragAndDrop": false,
-    "Lua.telemetry.enable": true,
     "trailing-spaces.highlightCurrentLine": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.unicodeHighlight.nonBasicASCII": false,
     "agdaMode.connection.agdaPath": "/home/flavio/.local/bin/agda",
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[lua]": {
+        "editor.defaultFormatter": "JohnnyMorganz.stylua"
+    },
+    "Lua.telemetry.enable": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "files.associations": {
+        "*.jani": "json"
     }
 }

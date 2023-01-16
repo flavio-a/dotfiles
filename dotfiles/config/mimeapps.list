@@ -30,8 +30,8 @@ text/css=mousepad.desktop
 text/markdown=mousepad.desktop
 
 [Added Associations]
-x-scheme-handler/tg=userapp-Telegram Desktop-Z40MU0.desktop;userapp-Telegram Desktop.desktop;
-image/jpeg=gimp.desktop;org.kde.kolourpaint.desktop;lximage-qt.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop.desktop;
+image/jpeg=org.kde.kolourpaint.desktop;gimp.desktop;lximage-qt.desktop;
 image/png=org.kde.kolourpaint.desktop;gimp.desktop;lximage-qt.desktop;pinta.desktop;
 inode/directory=exo-file-manager.desktop;
 x-scheme-handler/trash=exo-file-manager.desktop;
