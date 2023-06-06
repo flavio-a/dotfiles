@@ -71,10 +71,11 @@ Host cortana
 
 # =============== MISC ===============
 
-Host phi19
-	Hostname c6320p-2.itc.unipi.it
-	User ascari-spm20
-
 Host unipipages
 	Hostname pages.di.unipi.it
 	User f.ascari
+
+Host olimanager
+    Hostname unito.olinfo.it
+    Port 2204
+    User olimanager

@@ -27,5 +27,11 @@
     },
     "files.associations": {
         "*.jani": "json"
+    },
+    "files.watcherExclude": {
+        "**/.git/**": true,
+        "**/.mypy_cache/**": true,
+        "**/.next/**": true,
+        "**/.pytest_cache/**": true
     }
 }

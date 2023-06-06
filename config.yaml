@@ -245,6 +245,10 @@ dotfiles:
   d_mpv:
     src: config/mpv
     dst: ~/.config/mpv
+    cmpignore:
+    - watch_later
+    upignore:
+    - watch_later
   d_autorandr:
     src: config/autorandr-{{@@ profile @@}}
     dst: ~/.config/autorandr
