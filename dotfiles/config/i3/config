@@ -33,7 +33,6 @@ exec numlockx
 exec autorandr --change
 exec xfce4-terminal
 exec sh ~/.config/openbox/start-tg.sh
-exec xscreensaver
 exec systemctl --user start autostart.target
 
 ###############################################################################
