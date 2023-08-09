@@ -64,6 +64,10 @@ Host curiosity
 	Hostname curiosity.uz.sns.it
 	User root
 
+Host rosita
+	Hostname rosita.uz.sns.it
+	User root
+
 Host cortana
 	Hostname cortana.uz.sns.it
 	User geoguessrbot

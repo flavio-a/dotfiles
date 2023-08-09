@@ -48,12 +48,10 @@ profiles:
     - zsh
     - bash
     - misc
-    - openbox
     - vscodium
     - av
     - gpg-agent
     - i3
-    - xgeneric
   uz:
     include:
     - atom
@@ -110,6 +108,9 @@ profiles:
     - f_xscreensaver
     - f_xfce4-notifyd.xml
     - d_systemd_user
+    include:
+    - xgeneric
+    - gtk
   codeoss:
     dotfiles:
     - f_vscode_settings.json
@@ -128,6 +129,10 @@ profiles:
     dotfiles:
     - f_gpg-agent.conf
     - f_gpg_sshcontrol
+  gtk:
+    dotfiles:
+    - f_gtkrc-2.0
+    - f_gtk3_settings.ini
 dotfiles:
   d_sh:
     src: config/sh
@@ -229,7 +234,7 @@ dotfiles:
   f_mimeapps.list:
     src: config/mimeapps.list
     dst: ~/.config/mimeapps.list
-    chmod: '644'
+    chmod: '600'
   d_caffeine:
     src: config/caffeine
     dst: ~/.config/caffeine
@@ -288,3 +293,9 @@ dotfiles:
   d_systemd_user:
     src: config/systemd/user
     dst: ~/.config/systemd/user
+  f_gtkrc-2.0:
+    src: gtkrc-2.0
+    dst: ~/.gtkrc-2.0
+  f_gtk3_settings.ini:
+    src: config/gtk-3.0/settings.ini
+    dst: ~/.config/gtk-3.0/settings.ini
