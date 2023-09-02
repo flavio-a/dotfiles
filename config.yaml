@@ -1,9 +1,9 @@
 actions:
   sh-create-dircolors: actions/create-dircolors.sh > {0}
-  ssh-create-control-dir: mkdir -p {{@@ ssh_control_path @@}}
   atom-install-packages: >-
     export PATH="$(which python2 | xargs dirname):$PATH";
     apm install --packages-file {0}
+  makedir: mkdir -p {0}
   post:
     zsh-bundle-plugins: antibody bundle < {0}.txt > {0}.sh
 trans_write:
@@ -100,6 +100,7 @@ profiles:
     - d_caffeine
     - f_xfce4-notifyd.xml
     - d_autostart
+    - d_wallpapers
   i3:
     dotfiles:
     - d_i3
@@ -108,6 +109,7 @@ profiles:
     - f_xscreensaver
     - f_xfce4-notifyd.xml
     - d_systemd_user
+    - d_wallpapers
     include:
     - xgeneric
     - gtk
@@ -168,7 +170,7 @@ dotfiles:
     src: ssh/config
     dst: ~/.ssh/config
     actions:
-    - ssh-create-control-dir
+    - makedir "{{@@ ssh_control_path @@}}"
     template: true
   f_shrc:
     src: shrc
@@ -299,3 +301,12 @@ dotfiles:
   f_gtk3_settings.ini:
     src: config/gtk-3.0/settings.ini
     dst: ~/.config/gtk-3.0/settings.ini
+  d_wallpapers:
+    src: config/wallpapers
+    dst: ~/.config/wallpapers
+    cmpignore:
+    - images
+    upignore:
+    - images
+    actions:
+    - makedir "~/.config/wallpapers/images"
