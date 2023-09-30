@@ -62,3 +62,4 @@ video/mp4=vlc.desktop;mpv.desktop;
 application/json=codium.desktop;
 application/x-tikz-document=tikzit.desktop;texstudio.desktop;
 text/x-python=codium.desktop;
+text/csv=libreoffice-calc.desktop;org.xfce.mousepad.desktop;
