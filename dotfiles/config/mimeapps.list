@@ -28,6 +28,8 @@ application/x-extension-xht=firefox.desktop
 text/x-arduino=arduino-arduinoide.desktop
 text/css=org.xfce.mousepad.desktop
 text/markdown=org.xfce.mousepad.desktop
+image/webp=lximage-qt.desktop
+application/x-trash=org.xfce.mousepad.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Telegram Desktop.desktop;
@@ -63,3 +65,5 @@ application/json=codium.desktop;
 application/x-tikz-document=tikzit.desktop;texstudio.desktop;
 text/x-python=codium.desktop;
 text/csv=libreoffice-calc.desktop;org.xfce.mousepad.desktop;
+image/webp=lximage-qt.desktop;
+application/x-trash=org.xfce.mousepad.desktop;
