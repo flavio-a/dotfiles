@@ -33,6 +33,7 @@ exec numlockx
 exec autorandr --change
 exec xfce4-terminal
 exec sh ~/.config/openbox/start-tg.sh
+exec sh ~/.config/i3/start-wifi.sh
 exec systemctl --user start autostart.target
 
 ###############################################################################

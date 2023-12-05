@@ -1,13 +1,8 @@
 actions:
   sh-create-dircolors: actions/create-dircolors.sh > {0}
-  atom-install-packages: >-
-    export PATH="$(which python2 | xargs dirname):$PATH";
-    apm install --packages-file {0}
   makedir: mkdir -p {0}
   post:
     zsh-bundle-plugins: antibody bundle < {0}.txt > {0}.sh
-trans_write:
-  atom-list-packages: apm list --installed --bare > {1}
 variables:
   ssh_control_path: ~/.ssh/control
 config:
@@ -29,6 +24,7 @@ config:
   upignore:
   - '*~'
   workdir: ~/.config/dotdrop
+  minversion: 1.14.0
 profiles:
   marvin:
     include:
@@ -54,15 +50,12 @@ profiles:
     - i3
   uz:
     include:
-    - atom
     - sh
     - zsh
     - bash
     - misc
     - openbox
     - av
-    variables:
-      atom_user_id: 36ea07cf-bb1d-4689-9c15-e24f14a5b7d0
   sh:
     dotfiles:
     - f_shrc
@@ -86,11 +79,6 @@ profiles:
     dotfiles:
     - d_xenv
     - f_xsessionrc
-  atom:
-    dotfiles:
-    - f_atom_packages.list
-    - f_atom_config.cson
-    - f_atom_keymap.cson
   openbox:
     dotfiles:
     - d_openbox
@@ -184,19 +172,6 @@ dotfiles:
   f_gitconfig:
     src: gitconfig
     dst: ~/.gitconfig
-  f_atom_packages.list:
-    src: atom/packages.list
-    dst: ~/.atom/packages.list
-    trans_write: atom-list-packages
-    actions:
-    - atom-install-packages '{{@@ _dotfile_abs_dst @@}}'
-  f_atom_config.cson:
-    src: atom/config.cson
-    dst: ~/.atom/config.cson
-    template: true
-  f_atom_keymap.cson:
-    src: atom/keymap.cson
-    dst: ~/.atom/keymap.cson
   f_bashrc:
     src: bashrc
     dst: ~/.bashrc

@@ -6,6 +6,7 @@
     editor = emacs -nw
 [alias]
     logadog = log --abbrev --graph --decorate --oneline --all
+    branch-noremote = for-each-ref --format '%(refname:short) %(upstream:track)' refs/heads
 [pull]
     rebase = true
 [gpg]

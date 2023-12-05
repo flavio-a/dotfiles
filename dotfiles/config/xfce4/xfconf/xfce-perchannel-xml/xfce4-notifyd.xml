@@ -11,6 +11,7 @@
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
       <value type="string" value="blueman"/>
+      <value type="string" value="com.discordapp.Discord"/>
       <value type="string" value="discord"/>
       <value type="string" value="Dropbox"/>
       <value type="string" value="FileZilla"/>
