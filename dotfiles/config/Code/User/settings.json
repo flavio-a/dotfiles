@@ -33,5 +33,6 @@
         "**/.mypy_cache/**": true,
         "**/.next/**": true,
         "**/.pytest_cache/**": true
-    }
+    },
+    "update.showReleaseNotes": false
 }
