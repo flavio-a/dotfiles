@@ -58,6 +58,7 @@ bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+ograve focus right
+bindsym $mod+semicolon focus right
 # bindsym $mod+j focus left
 # bindsym $mod+k focus down
 # bindsym $mod+l focus right
@@ -70,6 +71,7 @@ bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+ograve move right
+bindsym $mod+Shift+semicolon move right
 # bindsym $mod+Shift+j move left
 # bindsym $mod+Shift+k move down
 # bindsym $mod+Shift+l move right
@@ -182,6 +184,7 @@ mode "resize" {
         bindsym k resize grow height 10 px or 10 ppt
         bindsym l resize shrink height 10 px or 10 ppt
         bindsym ograve resize grow width 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt

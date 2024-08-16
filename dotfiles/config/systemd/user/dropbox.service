@@ -6,5 +6,8 @@ Type=forking
 ExecStart=/usr/bin/dropbox start
 ExecStop=/usr/bin/dropbox stop
 
+Restart=on-failure
+RestartSec=5s
+
 [Install]
 WantedBy=autostart.target

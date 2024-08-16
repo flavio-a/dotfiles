@@ -34,5 +34,8 @@
         "**/.next/**": true,
         "**/.pytest_cache/**": true
     },
-    "update.showReleaseNotes": false
+    "update.showReleaseNotes": false,
+    "vscoq.path": "/home/flavio/.opam/CP.2023.11.0~8.18~2023.11/bin/vscoqtop",
+    "vscoq.completion.unificationLimit": 50,
+    "vscoq.proof.cursor.sticky": false
 }
